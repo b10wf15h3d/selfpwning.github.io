@@ -4,13 +4,70 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Contact · Self Pwning</title>
+<meta name="description" content="Get in touch with Sam Macdonald about the Self Pwning field guide: adapting or translating it, talks, or feedback.">
 <meta name="robots" content="noindex">
-<meta http-equiv="refresh" content="1; url=https://www.linkedin.com/in/sam-macdonald-66967642/">
-<link rel="canonical" href="https://www.linkedin.com/in/sam-macdonald-66967642/">
-<style>body{background:#1b2230;color:#f7f3ea;font-family:system-ui,sans-serif;display:grid;place-items:center;min-height:100vh;margin:0;padding:16px;text-align:center}a{color:#f2c14e}</style>
+<link rel="canonical" href="https://selfpwning.com/contact/">
+<style>
+@font-face{font-family:Archivo;font-weight:500;font-display:swap;src:url(../assets/fonts/archivo-latin-500-normal.woff2) format("woff2")}
+@font-face{font-family:Archivo;font-weight:900;font-display:swap;src:url(../assets/fonts/archivo-latin-900-normal.woff2) format("woff2")}
+@font-face{font-family:Serif4;font-weight:400;font-display:swap;src:url(../assets/fonts/source-serif-4-latin-400-normal.woff2) format("woff2")}
+@font-face{font-family:Mono;font-weight:400;font-display:swap;src:url(../assets/fonts/jetbrains-mono-latin-400-normal.woff2) format("woff2")}
+@font-face{font-family:Mono;font-weight:700;font-display:swap;src:url(../assets/fonts/jetbrains-mono-latin-700-normal.woff2) format("woff2")}
+:root{--ink:#1b2230;--line:#3a4456;--paper:#f7f3ea;--amber:#f2c14e;--mint:#8fd1bd;--coral:#d9573a;--grey:#8a93a3}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--ink);color:var(--paper);font-family:Serif4,Georgia,serif;font-size:18px;line-height:1.55;min-height:100vh}
+a{color:inherit}
+.wrap{max-width:720px;margin:0 auto;padding:0 24px}
+.bar{font-family:Mono;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--grey);padding:18px 0;display:flex;justify-content:space-between}
+.bar a{text-decoration:none}.bar a:last-child{color:var(--amber);font-weight:700}
+main{padding:48px 0 64px}
+.tag{font-family:Mono;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--mint);font-weight:700}
+h1{font-family:Archivo;font-weight:900;text-transform:uppercase;font-size:clamp(44px,9vw,76px);line-height:.92;margin:10px 0 18px}
+h1 span{color:var(--amber)}
+.lead{font-family:Archivo;font-weight:500;font-size:21px;color:#d7dde6;margin-bottom:28px}
+ul{list-style:none;margin:0 0 32px}
+ul li{padding-left:28px;position:relative;margin-bottom:8px}
+ul li::before{content:"›";position:absolute;left:4px;color:var(--amber);font-family:Mono;font-weight:700}
+.mail{display:flex;flex-wrap:wrap;gap:12px;align-items:center;background:#141a25;border:1px solid var(--line);border-radius:14px;padding:18px 20px}
+.mail .addr{font-family:Mono;font-weight:700;font-size:clamp(17px,4.4vw,22px);color:var(--amber);flex:1 1 260px;word-break:break-all}
+.btn{display:inline-flex;align-items:center;justify-content:center;font-family:Archivo;font-weight:900;font-size:17px;border-radius:10px;padding:12px 18px;text-decoration:none;border:2px solid var(--line);background:none;color:var(--paper);cursor:pointer}
+.btn.primary{background:var(--amber);border-color:var(--amber);color:var(--ink)}
+.alt{margin-top:18px;color:#c3cad5;font-size:17px}
+.alt a{color:var(--amber)}
+.warn{margin-top:40px;border-left:6px solid var(--coral);background:#241d22;border-radius:0 12px 12px 0;padding:16px 20px;font-size:17px}
+.warn b{font-family:Archivo}
+.warn a{color:var(--amber)}
+footer{font-family:Mono;font-size:13px;color:var(--grey);padding:0 0 32px}
+</style>
 <script data-goatcounter="https://selfpwn.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </head>
 <body>
-<p>Taking you to Sam Macdonald on LinkedIn…<br><a href="https://www.linkedin.com/in/sam-macdonald-66967642/">Continue to LinkedIn</a></p>
+<div class="wrap">
+  <div class="bar"><a href="/">← Self Pwning</a><a href="/#help">Need help now? ↓</a></div>
+  <main>
+    <div class="tag">// Contact</div>
+    <h1>Get in <span>touch.</span></h1>
+    <p class="lead">I'm Sam Macdonald, the person behind the Self Pwning field guide. Drop me a line about:</p>
+    <ul>
+      <li>Adapting or translating the guide for your team, event or language</li>
+      <li>Talks and workshops on mental health in cyber security</li>
+      <li>Feedback, corrections, or a tip you think should be in the next version</li>
+    </ul>
+    <div class="mail">
+      <span class="addr" id="addr">hello [at] selfpwning [dot] com</span>
+      <a class="btn primary" id="send" href="/contact/">Email me</a>
+      <button class="btn" id="copy" type="button">Copy</button>
+    </div>
+    <p class="alt">Prefer LinkedIn? <a href="https://www.linkedin.com/in/sam-macdonald-66967642/" rel="noopener">Message me there</a>.</p>
+    <div class="warn"><b>This inbox isn't for emergencies.</b> I might not reply for a few days. If you're struggling right now, please use one of the <a href="/#help">helplines on the home page</a>, or call your local emergency number if you're in danger.</div>
+  </main>
+  <footer>Self Pwning · Field Guide Vol. 01</footer>
+</div>
+<script>
+(function(){var u="hello",d="selfpwning.com",a=u+"@"+d;
+document.getElementById("addr").textContent=a;
+document.getElementById("send").href="mailto:"+a+"?subject="+encodeURIComponent("Self Pwning");
+var c=document.getElementById("copy");c.onclick=function(){try{navigator.clipboard.writeText(a).then(function(){c.textContent="Copied";setTimeout(function(){c.textContent="Copy"},2000)})}catch(e){}};})();
+</script>
 </body>
 </html>
