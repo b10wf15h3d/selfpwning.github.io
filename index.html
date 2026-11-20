@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Self Pwning · A field guide to mental health in cyber security</title>
-<meta name="description" content="A free pocket field guide to stress, anxiety, burnout and imposter syndrome in cyber security, and how to stop compromising yourself. By Sam Macdonald.">
+<meta name="description" content="A free field guide to mental health in cyber security: practical help with stress, anxiety, burnout and imposter syndrome for people who work in infosec. By Sam Macdonald.">
 <meta name="author" content="Sam Macdonald">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Self Pwning · Field Guide Vol. 01">
@@ -23,11 +23,12 @@
 <meta name="twitter:title" content="Self Pwning · Field Guide Vol. 01">
 <meta name="twitter:description" content="A free pocket field guide to stress, anxiety, burnout and imposter syndrome in cyber security, and how to stop compromising yourself.">
 <meta name="twitter:image" content="https://selfpwning.com/assets/og.jpg">
-<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebSite", "@id": "https://selfpwning.com/#website", "url": "https://selfpwning.com/", "name": "Self Pwning", "inLanguage": "en-GB", "publisher": {"@id": "https://selfpwning.com/#sam"}}, {"@type": "Person", "@id": "https://selfpwning.com/#sam", "name": "Sam Macdonald", "url": "https://selfpwning.com/", "sameAs": ["https://www.linkedin.com/in/sam-macdonald-66967642/"], "email": "mailto:hello@selfpwning.com", "contactPoint": {"@type": "ContactPoint", "contactType": "general enquiries", "email": "hello@selfpwning.com", "url": "https://selfpwning.com/contact/", "availableLanguage": "en-GB"}}, {"@type": "Book", "@id": "https://selfpwning.com/#guide", "name": "Self Pwning: Field Guide Vol. 01", "description": "A free pocket field guide to stress, anxiety, burnout and imposter syndrome in cyber security, and how to stop compromising yourself.", "author": {"@id": "https://selfpwning.com/#sam"}, "inLanguage": "en-GB", "bookFormat": "https://schema.org/EBook", "numberOfPages": 20, "version": "1.0", "datePublished": "2026-11", "isAccessibleForFree": true, "license": "https://creativecommons.org/licenses/by-nc-nd/4.0/", "url": "https://selfpwning.com/", "image": "https://selfpwning.com/assets/cover.jpg", "about": ["Stress", "Anxiety", "Burnout", "Impostor syndrome", "Mental health", "Cyber security"], "audience": {"@type": "Audience", "audienceType": "People who work in cyber security"}, "encoding": {"@type": "MediaObject", "contentUrl": "https://selfpwning.com/Self-Pwning-Field-Guide.pdf", "encodingFormat": "application/pdf"}, "offers": {"@type": "Offer", "price": "0", "priceCurrency": "GBP", "availability": "https://schema.org/InStock", "url": "https://selfpwning.com/"}}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebSite", "@id": "https://selfpwning.com/#website", "url": "https://selfpwning.com/", "name": "Self Pwning", "inLanguage": "en-GB", "publisher": {"@id": "https://selfpwning.com/#sam"}}, {"@type": "Person", "@id": "https://selfpwning.com/#sam", "name": "Sam Macdonald", "url": "https://selfpwning.com/", "sameAs": ["https://www.linkedin.com/in/sam-macdonald-66967642/"], "email": "mailto:hello@selfpwning.com", "contactPoint": {"@type": "ContactPoint", "contactType": "general enquiries", "email": "hello@selfpwning.com", "url": "https://selfpwning.com/contact/", "availableLanguage": "en-GB"}}, {"@type": "Book", "@id": "https://selfpwning.com/#guide", "name": "Self Pwning: Field Guide Vol. 01", "description": "A free pocket field guide to stress, anxiety, burnout and imposter syndrome in cyber security, and how to stop compromising yourself.", "author": {"@id": "https://selfpwning.com/#sam"}, "inLanguage": "en-GB", "bookFormat": "https://schema.org/EBook", "numberOfPages": 20, "version": "1.0", "datePublished": "2026-11", "isAccessibleForFree": true, "keywords": "mental health in cyber security, infosec burnout, imposter syndrome in cyber security, stress and anxiety in security work", "license": "https://creativecommons.org/licenses/by-nc-nd/4.0/", "url": "https://selfpwning.com/", "image": "https://selfpwning.com/assets/cover.jpg", "about": ["Stress", "Anxiety", "Burnout", "Impostor syndrome", "Mental health", "Cyber security"], "audience": {"@type": "Audience", "audienceType": "People who work in cyber security"}, "encoding": {"@type": "MediaObject", "contentUrl": "https://selfpwning.com/Self-Pwning-Field-Guide.pdf", "encodingFormat": "application/pdf"}, "offers": {"@type": "Offer", "price": "0", "priceCurrency": "GBP", "availability": "https://schema.org/InStock", "url": "https://selfpwning.com/"}}]}</script>
 <link rel="icon" href="/favicon.ico" sizes="48x48">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="manifest" href="/site.webmanifest">
+<link rel="preload" href="assets/fonts/archivo-latin-900-normal.woff2" as="font" type="font/woff2" crossorigin>
 <style>
 @font-face{font-family:Archivo;font-weight:500;font-display:swap;src:url(assets/fonts/archivo-latin-500-normal.woff2) format("woff2")}
 @font-face{font-family:Archivo;font-weight:700;font-display:swap;src:url(assets/fonts/archivo-latin-700-normal.woff2) format("woff2")}
@@ -70,6 +71,7 @@ h2{font-family:var(--sans);font-weight:900;text-transform:uppercase;font-size:cl
 .hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:center}
 .hero h1{font-family:var(--sans);font-weight:900;text-transform:uppercase;font-size:clamp(56px,10vw,108px);line-height:.88;letter-spacing:-.015em}
 .hero h1 span{color:var(--amber)}
+.hero .tag{color:var(--mint);margin-bottom:14px}
 .hero .lede{font-family:var(--sans);font-weight:500;font-size:clamp(19px,2.2vw,22px);line-height:1.35;color:#d6e7e0;margin:22px 0 26px;max-width:560px}
 .term{font-family:var(--mono);font-size:14px;line-height:1.7;background:var(--ink-2);border:1px solid var(--line);border-radius:10px;padding:16px 18px;color:#cfe9df;max-width:560px;overflow-x:auto}
 .term .p{color:var(--amber)} .term .h{color:#6f8a82} .term .o{color:#f08a6c}
@@ -162,6 +164,7 @@ footer .fr{text-align:right;align-self:flex-end}
 <header class="hero">
   <div class="wrap">
     <div>
+      <p class="tag">// A field guide to mental health in cyber security</p>
       <h1>Self<br><span>Pwning.</span></h1>
       <p class="lede">A free pocket field guide to stress, anxiety, burnout and imposter syndrome in cyber security, and how to stop compromising yourself.</p>
       <div class="term" aria-label="Terminal illustration">
@@ -181,7 +184,7 @@ footer .fr{text-align:right;align-self:flex-end}
       <p class="meta">v1.0 · November 2026 · Free to share · CC BY-NC-ND 4.0</p>
     </div>
     <div class="cover">
-      <img src="assets/cover.jpg" width="641" height="908" alt="Cover of the Self Pwning field guide">
+      <img src="assets/cover.jpg" width="641" height="908" fetchpriority="high" alt="Cover of the Self Pwning field guide to mental health in cyber security">
     </div>
   </div>
 </header>
@@ -191,7 +194,7 @@ footer .fr{text-align:right;align-self:flex-end}
   <div class="wrap">
     <div class="tag">// what's inside</div>
     <h2>Four threats. Plenty of patches.</h2>
-    <p class="sub">Practical, plain-English, and written for people who work in security.</p>
+    <p class="sub">Practical, plain-English mental health advice, written for people who work in security.</p>
     <div class="parts">
       <article class="part">
         <div class="n">Part 1</div>
