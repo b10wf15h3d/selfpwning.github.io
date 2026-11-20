@@ -1,0 +1,352 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stress and anxiety in cyber security: signs and coping · Self Pwning</title>
+<meta name="description" content="Stress and anxiety in cyber security: the Yerkes–Dodson curve, signs to watch for, why our industry is exposed, and everyday controls that help. From the free Self Pwning field guide.">
+<meta name="author" content="Sam Macdonald">
+<link rel="canonical" href="https://selfpwning.com/stress-and-anxiety/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Self Pwning">
+<meta property="og:locale" content="en_GB">
+<meta property="og:title" content="Stress and anxiety in cyber security: signs and coping">
+<meta property="og:description" content="Stress and anxiety in cyber security: the Yerkes–Dodson curve, signs to watch for, why our industry is exposed, and everyday controls that help. From the free Self Pwning field guide.">
+<meta property="og:url" content="https://selfpwning.com/stress-and-anxiety/">
+<meta property="og:image" content="https://selfpwning.com/assets/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#1b2230">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Article", "headline": "Stress & anxiety in cyber security.", "description": "Stress and anxiety in cyber security: the Yerkes\u2013Dodson curve, signs to watch for, why our industry is exposed, and everyday controls that help. From the free Self Pwning field guide.", "url": "https://selfpwning.com/stress-and-anxiety/", "inLanguage": "en-GB", "author": {"@id": "https://selfpwning.com/#sam"}, "publisher": {"@id": "https://selfpwning.com/#sam"}, "isPartOf": {"@id": "https://selfpwning.com/#website"}, "image": "https://selfpwning.com/assets/og.jpg", "isAccessibleForFree": true, "license": "https://creativecommons.org/licenses/by-nc-nd/4.0/"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Self Pwning", "item": "https://selfpwning.com/"}, {"@type": "ListItem", "position": 2, "name": "Stress & anxiety", "item": "https://selfpwning.com/stress-and-anxiety/"}]}]}</script>
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="preload" href="/assets/fonts/archivo-latin-900-normal.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:Archivo;font-weight:500;font-display:swap;src:url(/assets/fonts/archivo-latin-500-normal.woff2) format("woff2")}
+@font-face{font-family:Archivo;font-weight:700;font-display:swap;src:url(/assets/fonts/archivo-latin-700-normal.woff2) format("woff2")}
+@font-face{font-family:Archivo;font-weight:900;font-display:swap;src:url(/assets/fonts/archivo-latin-900-normal.woff2) format("woff2")}
+@font-face{font-family:Serif4;font-weight:400;font-display:swap;src:url(/assets/fonts/source-serif-4-latin-400-normal.woff2) format("woff2")}
+@font-face{font-family:Serif4;font-weight:400;font-style:italic;font-display:swap;src:url(/assets/fonts/source-serif-4-latin-400-italic.woff2) format("woff2")}
+@font-face{font-family:Serif4;font-weight:700;font-display:swap;src:url(/assets/fonts/source-serif-4-latin-700-normal.woff2) format("woff2")}
+@font-face{font-family:Mono;font-weight:400;font-display:swap;src:url(/assets/fonts/jetbrains-mono-latin-400-normal.woff2) format("woff2")}
+@font-face{font-family:Mono;font-weight:700;font-display:swap;src:url(/assets/fonts/jetbrains-mono-latin-700-normal.woff2) format("woff2")}
+@font-face{font-family:Hand;font-weight:500;font-display:swap;src:url(/assets/fonts/caveat-latin-500-normal.woff2) format("woff2")}
+
+:root{
+  --ink:#1b2230; --ink-2:#141a25; --line:#3a4456; --paper:#f7f3ea; --card:#fffdf8;
+  --teal:#2e7d6f; --teal-soft:#e2eee8; --mint:#8fd1bd; --sage:#9fb8b0;
+  --amber:#f2c14e; --amber-soft:#fbefcc; --coral:#d9573a; --grey:#6b7280; --rule:#d8d0bf;
+  --serif:Serif4,Georgia,serif; --sans:Archivo,system-ui,sans-serif; --mono:Mono,ui-monospace,Menlo,monospace;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--paper);color:var(--ink);font-family:var(--serif);font-size:18px;line-height:1.55}
+a{color:inherit}
+img{max-width:100%;height:auto;display:block}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+.tag{font-family:var(--mono);font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--teal);font-weight:700}
+h2{font-family:var(--sans);font-weight:900;text-transform:uppercase;font-size:clamp(30px,5vw,44px);line-height:1;letter-spacing:-.01em;margin:8px 0 10px}
+.sub{font-family:var(--sans);font-weight:500;color:var(--teal);font-size:19px;margin-bottom:26px}
+.note{font-family:Hand,cursive;font-weight:500;color:var(--coral);font-size:24px;line-height:1.05}
+:focus-visible{outline:3px solid var(--amber);outline-offset:3px;border-radius:4px}
+.skip{position:absolute;left:-999px;top:8px;background:var(--amber);color:var(--ink);padding:8px 12px;font-family:var(--sans);font-weight:700;z-index:10}
+.skip:focus{left:8px}
+
+/* top bar */
+.bar{background:var(--ink);color:var(--sage);font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase}
+.bar .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px;padding-top:14px;padding-bottom:14px}
+.bar a{color:var(--amber);text-decoration:none;font-weight:700;white-space:nowrap}
+.bar a:hover{text-decoration:underline}
+
+/* hero */
+.hero{background:var(--ink);color:var(--paper);padding:40px 0 72px;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:center}
+.hero h1{font-family:var(--sans);font-weight:900;text-transform:uppercase;font-size:clamp(56px,10vw,108px);line-height:.88;letter-spacing:-.015em}
+.hero h1 span{color:var(--amber)}
+.hero .tag{color:var(--mint);margin-bottom:14px}
+.hero .lede{font-family:var(--sans);font-weight:500;font-size:clamp(19px,2.2vw,22px);line-height:1.35;color:#d6e7e0;margin:22px 0 26px;max-width:560px}
+.term{font-family:var(--mono);font-size:14px;line-height:1.7;background:var(--ink-2);border:1px solid var(--line);border-radius:10px;padding:16px 18px;color:#cfe9df;max-width:560px;overflow-x:auto}
+.term .p{color:var(--amber)} .term .h{color:#6f8a82} .term .o{color:#f08a6c}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.btn{display:inline-flex;align-items:center;gap:10px;font-family:var(--sans);font-weight:700;font-size:17px;text-decoration:none;border-radius:10px;padding:14px 20px;border:2px solid transparent;transition:transform .12s ease}
+.btn:hover{transform:translateY(-1px)}
+.btn.primary{background:var(--amber);color:var(--ink)}
+.btn.ghost{border-color:#56627a;color:var(--paper)}
+.btn.ghost:hover{border-color:var(--amber)}
+.print{font-family:var(--sans);font-size:16px;color:#d6e7e0;margin-top:16px}
+.print a{color:var(--amber);font-weight:700}
+.print span{font-family:var(--mono);font-size:12.5px;color:var(--sage)}
+.btn small{font-family:var(--mono);font-weight:400;font-size:12px;opacity:.8}
+.meta{font-family:var(--mono);font-size:12.5px;letter-spacing:.06em;color:var(--sage);margin-top:16px}
+.cover{position:relative;justify-self:center;max-width:360px;width:100%}
+.cover img{border-radius:6px;box-shadow:0 30px 60px rgba(0,0,0,.45),0 0 0 1px #2b3446;transform:rotate(2.5deg)}
+
+/* inside */
+section.block{padding:84px 0}
+.parts{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.part{background:var(--card);border:1.5px solid var(--ink);border-radius:12px;padding:22px 22px 20px}
+.part .n{font-family:var(--mono);font-size:12px;letter-spacing:.14em;color:var(--teal);font-weight:700;text-transform:uppercase}
+.part h3{font-family:var(--sans);font-weight:900;text-transform:uppercase;font-size:22px;margin:6px 0 8px}
+.part p{font-size:16.5px;line-height:1.5}
+.part .sev{display:inline-block;font-family:var(--mono);font-size:11px;font-weight:700;letter-spacing:.08em;border-radius:4px;padding:2px 7px;margin-top:12px}
+.also{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+.chip{font-family:var(--mono);font-size:13px;background:var(--teal-soft);color:#1f5a4f;border-radius:999px;padding:7px 13px}
+
+/* help */
+.help{background:#efe9dc;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.danger{background:var(--ink);color:var(--paper);border-left:6px solid var(--coral);border-radius:0 12px 12px 0;padding:20px 22px;margin-bottom:28px}
+.danger h3{font-family:var(--sans);color:var(--amber);font-size:20px;margin-bottom:4px}
+.danger b{font-family:var(--sans)}
+.lines{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.line{background:var(--card);border:1px solid var(--rule);border-radius:12px;padding:18px 20px;display:flex;flex-direction:column;gap:8px}
+.line h3{font-family:var(--sans);font-weight:700;font-size:18px}
+.line h3 span{font-family:var(--mono);font-weight:400;font-size:12px;letter-spacing:.08em;color:var(--grey);text-transform:uppercase;margin-left:6px}
+.line p{font-size:16px;line-height:1.45;color:#2f3747}
+.acts{display:flex;flex-wrap:wrap;gap:8px;margin-top:auto;padding-top:4px}
+.act{font-family:var(--mono);font-size:13.5px;font-weight:700;text-decoration:none;background:var(--ink);color:var(--paper);border-radius:8px;padding:9px 12px;white-space:nowrap}
+.act:hover{background:var(--teal)}
+.act.alt{background:transparent;color:var(--ink);border:1.5px solid var(--ink)}
+.act.alt:hover{background:var(--ink);color:var(--paper)}
+.small{font-family:var(--mono);font-size:12.5px;color:var(--grey);margin-top:18px}
+.other{margin-top:34px}
+.other h3{font-family:var(--sans);font-weight:700;text-transform:uppercase;font-size:18px;letter-spacing:.02em;margin-bottom:10px}
+.other ul{list-style:none;display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.other li{border-left:4px solid var(--teal);background:var(--teal-soft);border-radius:0 10px 10px 0;padding:14px 16px;font-size:16.5px}
+
+/* about */
+.about .wrap{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+.about p{margin-bottom:14px}
+.updates{background:var(--ink);color:var(--paper);border-radius:14px;padding:26px 26px 24px}
+.updates h3{font-family:var(--sans);font-weight:900;text-transform:uppercase;font-size:24px;margin:4px 0 10px}
+.updates p{color:#d6e7e0;font-size:16.5px}
+.updates .tag{color:var(--mint)}
+
+/* footer */
+footer{background:var(--ink);color:var(--sage);font-family:var(--mono);font-size:12.5px;letter-spacing:.04em;line-height:1.7;padding:40px 0}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:20px}
+footer strong{font-family:var(--sans);color:var(--paper);font-size:16px;letter-spacing:0}
+footer a{color:var(--amber)}
+footer .fr{text-align:right;align-self:flex-end}
+.tagline{font-family:var(--sans);font-weight:700;font-size:20px;line-height:1.25;color:#d6e7e0;margin-bottom:10px;letter-spacing:0}
+.tagline span{color:var(--amber)}
+
+@media (max-width:860px){
+  .hero .wrap,.about .wrap{grid-template-columns:1fr;gap:40px}
+  .cover{max-width:230px;justify-self:start;margin-left:8px}
+  .parts,.lines,.other ul{grid-template-columns:1fr}
+      section.block{padding:60px 0}
+}
+@media (max-width:520px){
+  body{font-size:17px}
+  .wrap{padding:0 16px}
+  .bar .wrap{font-size:10.5px}
+  .btn{width:100%;justify-content:center}
+    .term{font-size:12px}
+  footer .fr{text-align:left}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
+
+.hero.topic{padding:40px 0 60px}
+.hero.topic .wrap{display:block}
+.hero.topic h1{font-size:clamp(44px,8vw,84px);max-width:900px}
+.hero.topic .tag{color:var(--mint);margin-bottom:14px}
+.toc{display:flex;flex-wrap:wrap;gap:8px;margin-top:26px}
+.toc a{font-family:var(--mono);font-size:12.5px;color:#cfe9df;border:1px solid var(--line);border-radius:999px;padding:6px 12px;text-decoration:none}
+.toc a:hover{border-color:var(--amber);color:var(--amber)}
+.doc{max-width:780px;margin:0 auto}
+.pg{padding:64px 0;border-bottom:2px solid var(--rule)}
+.pg:last-of-type{border-bottom:0}
+.pghead{position:relative;margin-bottom:22px;padding-right:160px}
+.kick{font-family:var(--mono);font-size:12.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--teal);font-weight:700}
+.pghead h2{font-size:clamp(36px,6vw,54px);line-height:.95;margin:6px 0 10px}
+.psub{font-family:var(--sans);font-weight:500;color:var(--teal);font-size:20px}
+.hand{position:absolute;right:0;top:34px;width:160px;font-family:Hand,cursive;font-weight:500;color:var(--coral);font-size:23px;line-height:1.08;transform:rotate(5deg)}
+.def{border-left:6px solid var(--amber);padding:4px 0 4px 18px;margin:0 0 18px;font-style:italic;font-size:19px}
+.doc p{margin-bottom:14px}
+.mini{font-family:var(--sans);font-weight:700;text-transform:uppercase;font-size:17px;letter-spacing:.01em;margin:28px 0 8px}
+.chev{list-style:none;margin:0 0 16px}
+.chev li{position:relative;padding-left:24px;margin-bottom:8px}
+.chev li::before{content:"›";position:absolute;left:4px;top:-1px;color:var(--ink);font-family:var(--sans);font-weight:900}
+.checks{display:grid;grid-template-columns:1fr 1fr;gap:4px 28px;margin:6px 0 18px}
+.checks h4{font-family:var(--sans);font-weight:700;font-size:16px;margin:8px 0 6px}
+.checks ul{list-style:none}
+.checks li{position:relative;padding-left:28px;margin-bottom:6px;font-size:17px;line-height:1.4}
+.checks li::before{content:"";position:absolute;left:0;top:4px;width:14px;height:14px;border:1.5px solid var(--ink);border-radius:2px;background:var(--card)}
+.co{border-radius:0 8px 8px 0;padding:14px 18px;margin:20px 0;font-size:17px}
+.co b.lab{font-family:var(--sans);font-weight:700}
+.co.y{background:var(--amber-soft);border-left:6px solid var(--amber)}
+.co.t{background:var(--teal-soft);border-left:6px solid var(--teal)}
+.co.d{background:var(--ink);color:var(--paper);border-left:6px solid var(--coral)}
+.co.d b.lab{color:var(--amber)}
+.co.d a{color:var(--amber)}
+.co h4{font-family:var(--sans);font-weight:700;font-size:17px;margin-bottom:4px}
+.co.d h4{color:var(--amber)}
+.term.inline{margin:18px 0;max-width:none;font-size:13.5px}
+.fine{font-family:var(--mono);font-size:12px;color:var(--grey);line-height:1.5;margin-top:6px}
+.fig{margin:16px 0 6px;max-width:660px}
+.fig img{width:100%;height:auto}
+.three{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;border-bottom:1px solid var(--rule);padding-bottom:12px;margin-bottom:10px;font-size:16px}
+.three b{font-family:var(--serif)}
+.sevs{display:flex;flex-direction:column;gap:12px;margin-bottom:18px}
+.sev{background:var(--card);border:1.5px solid var(--ink);border-radius:8px;padding:12px 16px}
+.sev h3{font-family:var(--sans);font-weight:900;text-transform:uppercase;font-size:16.5px;display:flex;justify-content:space-between;gap:12px;align-items:center;margin-bottom:4px}
+.sev p{margin:0;font-size:16.5px;line-height:1.45}
+.badge{font-family:var(--mono);font-size:11px;font-weight:700;letter-spacing:.08em;border-radius:3px;padding:2px 7px;white-space:nowrap}
+.b-crit{background:#b3261e;color:#fff}.b-high{background:#e07b24;color:#fff}.b-med{background:var(--amber);color:var(--ink)}
+.steps{list-style:none;margin:6px 0 18px}
+.steps li{display:grid;grid-template-columns:34px 1fr;gap:12px;margin-bottom:14px}
+.steps .num{width:28px;height:28px;border-radius:50%;background:var(--teal);color:#fff;font-family:var(--sans);font-weight:700;font-size:14px;display:flex;align-items:center;justify-content:center;margin-top:2px}
+.steps h4{font-family:var(--sans);font-weight:700;text-transform:uppercase;font-size:15.5px}
+.steps p{margin:0;font-size:17px;line-height:1.45}
+.box{background:var(--teal-soft);border-left:6px solid var(--teal);border-radius:0 8px 8px 0;padding:14px 18px;margin:18px 0}
+.box h4{font-family:var(--sans);font-weight:700;font-size:16px;margin-bottom:6px}
+.ticks{list-style:none;font-family:var(--mono);font-size:13.5px;line-height:1.7}
+.ticks li::before{content:"✓ ";color:var(--teal)}
+.fill .ln{display:flex;gap:12px;align-items:center;margin:14px 0}
+.fill .ln::after{content:"";flex:1;border-bottom:1.5px dashed #9a917c;height:1px}
+.fill .ln .num{width:24px;height:24px;font-size:12px}
+.fill .ln .cb{width:14px;height:14px;border:1.5px solid var(--ink);border-radius:2px;background:var(--card)}
+.ws{width:100%;border-collapse:collapse;margin:8px 0 18px;font-size:16px}
+.ws th{font-family:var(--mono);font-size:11.5px;font-weight:400;letter-spacing:.12em;text-transform:uppercase;color:var(--grey);text-align:left;padding:8px 10px;border-bottom:2px solid var(--ink);background:none}
+.ws td{padding:9px 10px;border-bottom:1px solid var(--rule);vertical-align:top;border-left:0;border-right:0;border-top:0;background:none}
+.ws.blank td{height:40px}
+.ws td.q{font-style:italic;color:#9b3d27}
+.ws td.k{font-family:var(--sans);font-weight:700;font-size:15px}
+.ws.vs td{width:50%}
+.basics h4{font-family:var(--sans);font-weight:700;text-transform:uppercase;font-size:16px;margin:18px 0 4px}
+.basics p{margin:0}
+.audit{display:grid;grid-template-columns:1fr 1fr;gap:6px 28px;font-size:15.5px;margin:6px 0}
+.audit div{display:flex;justify-content:space-between;border-bottom:1px solid var(--rule);padding:6px 0}
+.audit span{font-family:var(--mono);color:var(--grey);letter-spacing:.15em}
+.stats{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:8px 0}
+.stat{background:var(--ink);color:var(--paper);border-radius:8px;padding:14px 16px}
+.stat b{display:block;font-family:var(--sans);font-weight:900;font-size:40px;line-height:1;color:var(--amber);margin-bottom:6px}
+.stat span{font-size:15.5px;line-height:1.35;display:block}
+.ideas{columns:2;column-gap:28px}
+.ideas li{break-inside:avoid}
+.ex{background:var(--teal-soft);border-left:6px solid var(--teal);border-radius:0 8px 8px 0;padding:12px 18px;margin:18px 0}
+.ex h4{font-family:var(--sans);font-weight:700;font-size:15.5px;margin-bottom:4px}
+.ex .ws{margin:0}
+.ws-note{font-family:var(--mono);font-size:12px;color:var(--teal);margin:10px 0 18px}
+.ws-note a{color:var(--teal)}
+.gethelp{background:var(--ink);color:var(--paper);border-left:6px solid var(--coral);border-radius:0 12px 12px 0;padding:20px 22px;margin-top:48px}
+.gethelp h3{font-family:var(--sans);color:var(--amber);font-size:20px;margin-bottom:6px}
+.gethelp a{color:var(--amber);font-weight:700}
+.guidecta{background:#efe9dc;border:1px solid var(--rule);border-radius:14px;padding:24px;margin-top:28px}
+.guidecta h3{font-family:var(--sans);font-weight:900;text-transform:uppercase;font-size:22px;margin-bottom:8px}
+.guidecta .btn.ghost{color:var(--ink);border-color:var(--ink)}
+.more{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:18px}
+.more a{display:block;text-decoration:none;background:var(--card);border:1.5px solid var(--ink);border-radius:12px;padding:18px 20px}
+.more a b{display:block;font-family:var(--sans);font-weight:900;text-transform:uppercase;font-size:19px}
+.more a span{font-size:15.5px;color:#2f3747}
+.more a:hover{border-color:var(--teal)}
+@media (max-width:700px){
+  .pghead{padding-right:0}
+  .hand{position:static;width:auto;transform:rotate(-2deg);margin:4px 0 10px;font-size:22px}
+  .hand br{display:none}
+  .checks,.audit,.more,.stats{grid-template-columns:1fr}
+  .three{grid-template-columns:1fr;gap:8px}
+  .ideas{columns:1}
+  .pg{padding:48px 0}
+}
+</style>
+<script data-goatcounter="https://selfpwn.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</head>
+<body>
+<div class="bar"><div class="wrap"><a href="/" style="color:var(--sage);font-weight:400">← Self Pwning</a><a href="/#help">Need help now? ↓</a></div></div>
+<header class="hero topic">
+  <div class="wrap">
+    <p class="tag">// Part 1 · Stress &amp; anxiety</p>
+    <h1>Stress &amp; anxiety in <span>cyber security.</span></h1>
+    <p class="lede">Your body's own incident response: what stress and anxiety are, why security work is so exposed, and everyday controls that help. From the free Self Pwning field guide.</p>
+    <div class="cta">
+      <a class="btn primary" href="/Self-Pwning-Field-Guide.pdf" target="_blank" rel="noopener">Read the full guide <small>20 pages</small></a>
+      <a class="btn ghost" href="/Self-Pwning-Field-Guide.pdf" download>Download PDF</a>
+    </div>
+    <nav class="toc" aria-label="On this page"><a href="#what-is-stress">What is stress?</a><a href="#signs-of-stress">Signs of stress</a><a href="#what-is-anxiety">What is anxiety?</a><a href="#why-cyber-is-exposed">Why cyber is exposed</a><a href="#organise-your-time">Organise your time</a><a href="#identify-your-triggers">Identify your triggers</a><a href="#dont-forget-the-basics">Don't forget the basics</a></nav>
+  </div>
+</header>
+<main>
+<div class="wrap"><div class="doc">
+<section class="pg" id="what-is-stress"><header class="pghead"><p class="kick">// Part 1 · Stress &amp; anxiety</p><h2>What is<br>stress?</h2><p class="hand" aria-hidden="true">some stress is<br>useful. it's all<br>about the dose</p><p class="psub">Your body's own incident response</p></header>
+<blockquote class="def">A physical and emotional response to pressures or demands, which happens when the challenges you face exceed your perceived ability to cope.</blockquote>
+<ul class="chev"><li><b>Not a medical condition</b> in itself, but persistent stress can feed into physical and mental health problems.</li><li><b>No definitive test.</b> It's recognised through common signs and patterns (below).</li></ul>
+<h3 class="mini">The Yerkes–Dodson law</h3>
+<p>Performance improves as pressure rises, but only up to a point. Past that, more stress makes us worse, not better.</p>
+<figure class="fig"><img src="/assets/guide/yerkes.webp" width="1408" height="708" loading="lazy" alt="The Yerkes–Dodson curve: performance rises with stress or arousal to a sweet spot in the middle, then falls. Too little stress is on the left, just right in the middle, too much on the right."></figure>
+<div class="three"><div><b>Too little</b><br>Boredom, low motivation, underperformance</div><div><b>Just right</b><br>Focus, energy, your best work</div><div><b>Too much</b><br>Overwhelm, anxiety, mistakes</div></div>
+<p class="fine">"Arousal" here means how switched-on your brain and body are, nothing more. It's a simplified, widely used model, not a precise law.</p>
+</section><section class="pg" id="signs-of-stress"><header class="pghead"><p class="kick">// Detection engineering</p><h2>Signs of<br>stress</h2><p class="hand" aria-hidden="true">your body logs<br>everything. read<br>the logs</p><p class="psub">Indicators of compromise for humans</p></header>
+<p>Under pressure, your body releases stress hormones like adrenaline and cortisol to get you ready to fight or run. Brilliant for a two-hour incident. Not so good for a four-month project. Tick what you've noticed lately.</p>
+<div class="checks"><div><h4>In your body</h4><ul><li>Muscle aches and headaches</li><li>Sleep problems</li><li>Fatigue</li><li>Feeling sick, dizzy or faint</li><li>Existing health problems getting worse</li><li>Changes to your menstrual cycle</li></ul></div><div><h4>In how you behave</h4><ul><li>Eating too much or too little</li><li>Irritability or mood swings</li><li>Crying or feeling tearful</li><li>Unable to concentrate</li><li>Grinding teeth, clenching your jaw</li><li>Withdrawing from people</li></ul></div></div>
+<div class="co t"><h4>Bored-out is real too</h4>Look at the left side of the curve. Weeks with nothing to do, such as waiting on clearances, sitting "on the bench" between projects, or a role that's gone quiet, can be just as draining as overwork. Low motivation, skipping exercise, drinking more and worrying that you're not needed are all common there.</div>
+<div class="term inline"><span class="h"># box_breathing.sh · run when stress spikes</span><br>for i in 1..4: inhale 4s → hold 4s → exhale 4s → hold 4s<br><span class="h"># slows your heart rate · works mid-call · nobody will notice</span></div>
+<div class="co y"><b class=lab>Pattern, not panic.</b> One bad night isn't a breach. Several signs sticking around for weeks is worth acting on.</div>
+</section><section class="pg" id="what-is-anxiety"><header class="pghead"><p class="kick">// Part 1 · Stress &amp; anxiety</p><h2>What is<br>anxiety?</h2><p class="hand" aria-hidden="true">a false positive<br>still feels real</p><p class="psub">When the alarm keeps ringing after the threat has gone</p></header>
+<blockquote class="def">A psychological and physical response involving persistent worry, fear or unease, often out of proportion to the situation or without a clear trigger.</blockquote>
+<p>Anxiety isn't always a medical condition. But ongoing or intense anxiety can be part of an anxiety disorder, such as generalised anxiety disorder (GAD), which deserves a professional assessment.</p>
+<div class="checks"><div><h4>In your body</h4><ul><li>A churning stomach</li><li>Sleep problems</li><li>Faster breathing</li><li>Fast, thumping or irregular heartbeat</li><li>Panic attacks</li><li>Restless, can't sit still</li></ul></div><div><h4>In your mind</h4><ul><li>Tense, nervous, can't relax</li><li>Low mood</li><li>Constant need for reassurance</li><li>Worrying people are upset with you</li><li>Rumination</li><li>Worrying about what might happen</li></ul></div></div>
+<div class="co d"><b class=lab>Panic attack:</b> a sudden wave of intense fear with strong physical reactions when there's no real danger. It can feel like losing control or a heart attack. If you're ever unsure whether it's panic or your heart, get medical help.</div>
+<div class="co t"><h4>Grounding: the 5-4-3-2-1 scan</h4>When anxiety spirals, slowly name what's around you: <b>5</b> things you can see (a mug, a window, your keyboard), <b>4</b> things you can touch (your feet on the floor, the chair at your back), <b>3</b> things you can hear (a laptop fan, traffic, your breathing), <b>2</b> things you can smell (coffee, soap) and <b>1</b> thing you can taste (a sip of water). It pulls your attention back into the present.</div>
+<p style="font-size:16px"><b>Rumination:</b> replaying a bad experience or situation over and over, like a failed exploit stuck in a loop.</p>
+</section><section class="pg" id="why-cyber-is-exposed"><header class="pghead"><p class="kick">// Threat intelligence</p><h2>Why cyber<br>is exposed</h2><p class="hand" aria-hidden="true">attackers need to<br>get lucky once.<br>you know the rest</p><p class="psub">Stress and anxiety threat actors in our industry</p></header>
+<div class="sevs">
+<div class="sev"><h3>Chronic workload stress <span class="badge b-crit">CRITICAL</span></h3><p>Continuous monitoring and alert queues that never end. "Always on alert" slowly becomes vigilance fatigue, exhaustion and burnout.</p></div>
+<div class="sev"><h3>Back-to-back engagements <span class="badge b-crit">CRITICAL</span></h3><p>A new client, scope and tech stack every week or two, with utilisation targets and report deadlines stacking up behind each test. There's rarely time to recover in between.</p></div>
+<div class="sev"><h3>Acute incident stress <span class="badge b-high">HIGH</span></h3><p>Responding to breaches creates high-pressure moments: adrenaline spikes, broken sleep and mental fatigue, often outside working hours.</p></div>
+<div class="sev"><h3>The "empty report" fear <span class="badge b-high">HIGH</span></h3><p>Days into a test with nothing to show. Clients expect findings, and a clean report can feel like proof you missed something, even when the environment is genuinely solid.</p></div>
+<div class="sev"><h3>Fear of failure anxiety <span class="badge b-high">HIGH</span></h3><p>A single mistake could mean a breach, financial loss or reputational damage. And blame often lands on people, not systemic failures.</p></div>
+<div class="sev"><h3>Organisational pressure <span class="badge b-med">MEDIUM</span></h3><p>Conflicting priorities: strong security without disrupting the business, on a tight budget, explained to non-technical stakeholders.</p></div>
+</div>
+<div class="co y"><b class=lab>None of this means you're in the wrong job.</b> It means the job has real hazards, and hazards need controls.</div></section><section class="pg" id="organise-your-time"><header class="pghead"><p class="kick">// Coping strategy 01</p><h2>Organise<br>your time</h2><p class="hand" aria-hidden="true">your brain is not<br>a multi-threaded<br>process</p><p class="psub">Scheduling is a security control</p></header><ol class="steps"><li><span class="num">1</span><div><h4>Find your best time of day</h4><p>Do high-focus work when you're most alert: mornings if you're a morning person, evenings if you're not.</p></div></li><li><span class="num">2</span><div><h4>List and rank your tasks</h4><p>Most important first. Timetable when you'll tackle each one. Ask a manager or colleague to help prioritise, and postpone what isn't urgent.</p></div></li><li><span class="num">3</span><div><h4>Don't take on too much at once</h4><p>Fewer tasks, each done well, beats ten tasks done badly in parallel.</p></div></li><li><span class="num">4</span><div><h4>Take regular breaks, keep a steady pace</h4><p>Hard to do when stressed. That's exactly when it helps most.</p></div></li><li><span class="num">5</span><div><h4>Ask someone to help!</h4><p>Delegating frees time for the tasks that are actually causing the stress. Asking isn't weakness, it's load balancing.</p></div></li></ol>
+<div class="box"><h4>Why it works</h4><ul class="ticks"><li>gives a sense of control</li><li>prevents last-minute pressure</li><li>keeps focus on what matters</li><li>protects work–life balance</li><li>reduces mental overload</li></ul></div>
+<h3 class="mini">Today's top three</h3><div class="fill"><div class="ln"><span class="num steps-num" style="width:24px;height:24px;border-radius:50%;background:var(--teal);color:#fff;font-family:var(--sans);font-weight:700;font-size:12px;display:flex;align-items:center;justify-content:center">1</span></div><div class="ln"><span class="num steps-num" style="width:24px;height:24px;border-radius:50%;background:var(--teal);color:#fff;font-family:var(--sans);font-weight:700;font-size:12px;display:flex;align-items:center;justify-content:center">2</span></div><div class="ln"><span class="num steps-num" style="width:24px;height:24px;border-radius:50%;background:var(--teal);color:#fff;font-family:var(--sans);font-weight:700;font-size:12px;display:flex;align-items:center;justify-content:center">3</span></div></div><p class="ws-note">✎ Fill this in on the <a href="/Self-Pwning-Field-Guide-PRINT-booklet.pdf">printable guide</a></p></section><section class="pg" id="identify-your-triggers"><header class="pghead"><p class="kick">// Coping strategy 02</p><h2>Identify your<br>triggers</h2><p class="hand" aria-hidden="true">you can't detect<br>what you don't log</p><p class="psub">Awareness is the first step to control</p></header>
+<p>Knowing what sets you off lets you anticipate problems and prepare, even when you can't avoid the situation.</p>
+<ul class="chev"><li><b>Track your patterns.</b> Keep a short log of stressful moments to spot recurring triggers.</li><li><b>Controllable vs. uncontrollable.</b> Spend energy where you have influence, not on what's outside your control.</li><li><b>Check the environment.</b> Noise, interruptions and bad ergonomics count. Triggers aren't always tasks.</li><li><b>Recognise emotional triggers.</b> Fear of failure, perfectionism, feeling unprepared.</li><li><b>Use triggers as signals.</b> Once you know them, they become early alerts to start coping before it's overwhelming.</li></ul>
+<h3 class="mini">Trigger log</h3>
+<table class="ws blank"><thead><tr><th>When</th><th>What happened</th><th>In my control?</th><th>What helped</th></tr></thead><tbody><tr><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td></tr></tbody></table><p class="ws-note">✎ Fill this in on the <a href="/Self-Pwning-Field-Guide-PRINT-booklet.pdf">printable guide</a></p>
+</section><section class="pg" id="dont-forget-the-basics"><header class="pghead"><p class="kick">// Coping strategy 03 · Baseline hardening</p><h2>Don't forget<br>the basics</h2><p class="hand" aria-hidden="true">sleep is not<br>a vulnerability</p><p class="psub">Boring controls that block most attacks</p></header>
+<div class="basics">
+<h4>01 · Eat right</h4><p>Proper nutrition fuels your body and stabilises your mood. Regular meals, away from the keyboard.</p>
+<h4>02 · Exercise</h4><p>Physical activity reduces stress and clears your head. Even a 10-minute walk counts.</p>
+<h4>03 · Sleep right</h4><p>Quality sleep restores your mind and builds resilience. Most adults need 7–9 hours. Screens off before bed helps.</p>
+<h4>04 · Speak to someone</h4><p>Sharing how you feel eases the load. Friends, family, a colleague you trust.</p>
+<h4>05 · Seek professional advice</h4><p>A GP or therapist can give you proper tools. You don't need to wait until it's a crisis.</p>
+</div>
+<div class="co d"><h4>Alcohol &amp; nicotine: a false patch</h4>They feel like relief in the moment, but they create a cycle of dependency. Nicotine withdrawal raises anxiety, and alcohol disrupts sleep and lowers mood. Over time both make stress, anxiety and depression worse.</div>
+<h3 class="mini">This week's baseline audit</h3>
+<div class="audit"><div><i style="font-style:normal"><b>Eating</b> regular meals</i> <span>○○○○○</span></div><div><i style="font-style:normal"><b>Moving</b> most days</i> <span>○○○○○</span></div><div><i style="font-style:normal"><b>Sleeping</b> enough</i> <span>○○○○○</span></div><div><i style="font-style:normal"><b>Talking</b> to someone</i> <span>○○○○○</span></div></div><p class="ws-note">✎ Fill this in on the <a href="/Self-Pwning-Field-Guide-PRINT-booklet.pdf">printable guide</a></p></section>
+<div class="guidecta">
+  <h3>Print it for your team</h3>
+  <p>This page is pages 3 to 9 of the free Self Pwning field guide. The PDF has the worksheets ready to fill in, and prints as an A4 booklet.</p>
+  <div class="cta" style="margin-top:14px"><a class="btn primary" href="/Self-Pwning-Field-Guide.pdf" target="_blank" rel="noopener">Read the guide</a><a class="btn ghost" href="/Self-Pwning-Field-Guide-PRINT-booklet.pdf" download>Print booklet</a></div>
+</div>
+<div class="gethelp" role="note">
+  <h3>Need to talk now?</h3>
+  <p>If you're in immediate danger, call your local emergency number: 999 (UK) · 911 (US/Canada) · 112 (EU) · 000 (Australia). For free, confidential support, see the <a href="/#help">helplines on the home page</a>.</p>
+</div>
+<p style="font-size:15px;color:var(--grey);margin-top:22px">Not medical advice. This guide is written by a security person, not a mental health professional. If you're struggling, talk to a GP, doctor or therapist.</p>
+<h2 style="margin-top:56px">More from the guide</h2>
+<div class="more"><a href="/burnout/"><b>Burnout</b><span>Signs, causes and four workstreams for recovery</span></a><a href="/imposter-syndrome/"><b>Imposter syndrome</b><span>The thoughts to spot, and two worksheets</span></a></div>
+<div style="height:72px"></div>
+</div></div>
+</main>
+<footer>
+  <div class="wrap">
+    <div>
+      <div class="tagline">Don't self pwn.<br><span>Patch. Rest. Repeat.</span></div>
+      <strong>Sam Macdonald</strong> · <a href="https://www.linkedin.com/in/sam-macdonald-66967642/" rel="noopener">LinkedIn</a> · <a href="/contact/">Contact</a>
+    </div>
+    <div class="fr">
+      Self Pwning · Field Guide Vol. 01<br>
+      Licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" rel="license noopener">CC BY-NC-ND 4.0</a><br>
+      Not a substitute for professional help
+    </div>
+  </div>
+</footer>
+</body>
+</html>

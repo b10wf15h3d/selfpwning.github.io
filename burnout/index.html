@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Burnout in cyber security: signs, causes and recovery · Self Pwning</title>
+<meta name="description" content="Burnout in cyber security: the signs, how it differs from stress, common causes at work, and four workstreams for recovery. From the free Self Pwning field guide.">
+<meta name="author" content="Sam Macdonald">
+<link rel="canonical" href="https://selfpwning.com/burnout/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Self Pwning">
+<meta property="og:locale" content="en_GB">
+<meta property="og:title" content="Burnout in cyber security: signs, causes and recovery">
+<meta property="og:description" content="Burnout in cyber security: the signs, how it differs from stress, common causes at work, and four workstreams for recovery. From the free Self Pwning field guide.">
+<meta property="og:url" content="https://selfpwning.com/burnout/">
+<meta property="og:image" content="https://selfpwning.com/assets/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#1b2230">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Article", "headline": "Burnout in cyber security.", "description": "Burnout in cyber security: the signs, how it differs from stress, common causes at work, and four workstreams for recovery. From the free Self Pwning field guide.", "url": "https://selfpwning.com/burnout/", "inLanguage": "en-GB", "author": {"@id": "https://selfpwning.com/#sam"}, "publisher": {"@id": "https://selfpwning.com/#sam"}, "isPartOf": {"@id": "https://selfpwning.com/#website"}, "image": "https://selfpwning.com/assets/og.jpg", "isAccessibleForFree": true, "license": "https://creativecommons.org/licenses/by-nc-nd/4.0/"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Self Pwning", "item": "https://selfpwning.com/"}, {"@type": "ListItem", "position": 2, "name": "Burnout", "item": "https://selfpwning.com/burnout/"}]}]}</script>
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="preload" href="/assets/fonts/archivo-latin-900-normal.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:Archivo;font-weight:500;font-display:swap;src:url(/assets/fonts/archivo-latin-500-normal.woff2) format("woff2")}
+@font-face{font-family:Archivo;font-weight:700;font-display:swap;src:url(/assets/fonts/archivo-latin-700-normal.woff2) format("woff2")}
+@font-face{font-family:Archivo;font-weight:900;font-display:swap;src:url(/assets/fonts/archivo-latin-900-normal.woff2) format("woff2")}
+@font-face{font-family:Serif4;font-weight:400;font-display:swap;src:url(/assets/fonts/source-serif-4-latin-400-normal.woff2) format("woff2")}
+@font-face{font-family:Serif4;font-weight:400;font-style:italic;font-display:swap;src:url(/assets/fonts/source-serif-4-latin-400-italic.woff2) format("woff2")}
+@font-face{font-family:Serif4;font-weight:700;font-display:swap;src:url(/assets/fonts/source-serif-4-latin-700-normal.woff2) format("woff2")}
+@font-face{font-family:Mono;font-weight:400;font-display:swap;src:url(/assets/fonts/jetbrains-mono-latin-400-normal.woff2) format("woff2")}
+@font-face{font-family:Mono;font-weight:700;font-display:swap;src:url(/assets/fonts/jetbrains-mono-latin-700-normal.woff2) format("woff2")}
+@font-face{font-family:Hand;font-weight:500;font-display:swap;src:url(/assets/fonts/caveat-latin-500-normal.woff2) format("woff2")}
+
+:root{
+  --ink:#1b2230; --ink-2:#141a25; --line:#3a4456; --paper:#f7f3ea; --card:#fffdf8;
+  --teal:#2e7d6f; --teal-soft:#e2eee8; --mint:#8fd1bd; --sage:#9fb8b0;
+  --amber:#f2c14e; --amber-soft:#fbefcc; --coral:#d9573a; --grey:#6b7280; --rule:#d8d0bf;
+  --serif:Serif4,Georgia,serif; --sans:Archivo,system-ui,sans-serif; --mono:Mono,ui-monospace,Menlo,monospace;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--paper);color:var(--ink);font-family:var(--serif);font-size:18px;line-height:1.55}
+a{color:inherit}
+img{max-width:100%;height:auto;display:block}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+.tag{font-family:var(--mono);font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--teal);font-weight:700}
+h2{font-family:var(--sans);font-weight:900;text-transform:uppercase;font-size:clamp(30px,5vw,44px);line-height:1;letter-spacing:-.01em;margin:8px 0 10px}
+.sub{font-family:var(--sans);font-weight:500;color:var(--teal);font-size:19px;margin-bottom:26px}
+.note{font-family:Hand,cursive;font-weight:500;color:var(--coral);font-size:24px;line-height:1.05}
+:focus-visible{outline:3px solid var(--amber);outline-offset:3px;border-radius:4px}
+.skip{position:absolute;left:-999px;top:8px;background:var(--amber);color:var(--ink);padding:8px 12px;font-family:var(--sans);font-weight:700;z-index:10}
+.skip:focus{left:8px}
+
+/* top bar */
+.bar{background:var(--ink);color:var(--sage);font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase}
+.bar .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px;padding-top:14px;padding-bottom:14px}
+.bar a{color:var(--amber);text-decoration:none;font-weight:700;white-space:nowrap}
+.bar a:hover{text-decoration:underline}
+
+/* hero */
+.hero{background:var(--ink);color:var(--paper);padding:40px 0 72px;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:center}
+.hero h1{font-family:var(--sans);font-weight:900;text-transform:uppercase;font-size:clamp(56px,10vw,108px);line-height:.88;letter-spacing:-.015em}
+.hero h1 span{color:var(--amber)}
+.hero .tag{color:var(--mint);margin-bottom:14px}
+.hero .lede{font-family:var(--sans);font-weight:500;font-size:clamp(19px,2.2vw,22px);line-height:1.35;color:#d6e7e0;margin:22px 0 26px;max-width:560px}
+.term{font-family:var(--mono);font-size:14px;line-height:1.7;background:var(--ink-2);border:1px solid var(--line);border-radius:10px;padding:16px 18px;color:#cfe9df;max-width:560px;overflow-x:auto}
+.term .p{color:var(--amber)} .term .h{color:#6f8a82} .term .o{color:#f08a6c}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.btn{display:inline-flex;align-items:center;gap:10px;font-family:var(--sans);font-weight:700;font-size:17px;text-decoration:none;border-radius:10px;padding:14px 20px;border:2px solid transparent;transition:transform .12s ease}
+.btn:hover{transform:translateY(-1px)}
+.btn.primary{background:var(--amber);color:var(--ink)}
+.btn.ghost{border-color:#56627a;color:var(--paper)}
+.btn.ghost:hover{border-color:var(--amber)}
+.print{font-family:var(--sans);font-size:16px;color:#d6e7e0;margin-top:16px}
+.print a{color:var(--amber);font-weight:700}
+.print span{font-family:var(--mono);font-size:12.5px;color:var(--sage)}
+.btn small{font-family:var(--mono);font-weight:400;font-size:12px;opacity:.8}
+.meta{font-family:var(--mono);font-size:12.5px;letter-spacing:.06em;color:var(--sage);margin-top:16px}
+.cover{position:relative;justify-self:center;max-width:360px;width:100%}
+.cover img{border-radius:6px;box-shadow:0 30px 60px rgba(0,0,0,.45),0 0 0 1px #2b3446;transform:rotate(2.5deg)}
+
+/* inside */
+section.block{padding:84px 0}
+.parts{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.part{background:var(--card);border:1.5px solid var(--ink);border-radius:12px;padding:22px 22px 20px}
+.part .n{font-family:var(--mono);font-size:12px;letter-spacing:.14em;color:var(--teal);font-weight:700;text-transform:uppercase}
+.part h3{font-family:var(--sans);font-weight:900;text-transform:uppercase;font-size:22px;margin:6px 0 8px}
+.part p{font-size:16.5px;line-height:1.5}
+.part .sev{display:inline-block;font-family:var(--mono);font-size:11px;font-weight:700;letter-spacing:.08em;border-radius:4px;padding:2px 7px;margin-top:12px}
+.also{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+.chip{font-family:var(--mono);font-size:13px;background:var(--teal-soft);color:#1f5a4f;border-radius:999px;padding:7px 13px}
+
+/* help */
+.help{background:#efe9dc;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.danger{background:var(--ink);color:var(--paper);border-left:6px solid var(--coral);border-radius:0 12px 12px 0;padding:20px 22px;margin-bottom:28px}
+.danger h3{font-family:var(--sans);color:var(--amber);font-size:20px;margin-bottom:4px}
+.danger b{font-family:var(--sans)}
+.lines{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.line{background:var(--card);border:1px solid var(--rule);border-radius:12px;padding:18px 20px;display:flex;flex-direction:column;gap:8px}
+.line h3{font-family:var(--sans);font-weight:700;font-size:18px}
+.line h3 span{font-family:var(--mono);font-weight:400;font-size:12px;letter-spacing:.08em;color:var(--grey);text-transform:uppercase;margin-left:6px}
+.line p{font-size:16px;line-height:1.45;color:#2f3747}
+.acts{display:flex;flex-wrap:wrap;gap:8px;margin-top:auto;padding-top:4px}
+.act{font-family:var(--mono);font-size:13.5px;font-weight:700;text-decoration:none;background:var(--ink);color:var(--paper);border-radius:8px;padding:9px 12px;white-space:nowrap}
+.act:hover{background:var(--teal)}
+.act.alt{background:transparent;color:var(--ink);border:1.5px solid var(--ink)}
+.act.alt:hover{background:var(--ink);color:var(--paper)}
+.small{font-family:var(--mono);font-size:12.5px;color:var(--grey);margin-top:18px}
+.other{margin-top:34px}
+.other h3{font-family:var(--sans);font-weight:700;text-transform:uppercase;font-size:18px;letter-spacing:.02em;margin-bottom:10px}
+.other ul{list-style:none;display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.other li{border-left:4px solid var(--teal);background:var(--teal-soft);border-radius:0 10px 10px 0;padding:14px 16px;font-size:16.5px}
+
+/* about */
+.about .wrap{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+.about p{margin-bottom:14px}
+.updates{background:var(--ink);color:var(--paper);border-radius:14px;padding:26px 26px 24px}
+.updates h3{font-family:var(--sans);font-weight:900;text-transform:uppercase;font-size:24px;margin:4px 0 10px}
+.updates p{color:#d6e7e0;font-size:16.5px}
+.updates .tag{color:var(--mint)}
+
+/* footer */
+footer{background:var(--ink);color:var(--sage);font-family:var(--mono);font-size:12.5px;letter-spacing:.04em;line-height:1.7;padding:40px 0}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:20px}
+footer strong{font-family:var(--sans);color:var(--paper);font-size:16px;letter-spacing:0}
+footer a{color:var(--amber)}
+footer .fr{text-align:right;align-self:flex-end}
+.tagline{font-family:var(--sans);font-weight:700;font-size:20px;line-height:1.25;color:#d6e7e0;margin-bottom:10px;letter-spacing:0}
+.tagline span{color:var(--amber)}
+
+@media (max-width:860px){
+  .hero .wrap,.about .wrap{grid-template-columns:1fr;gap:40px}
+  .cover{max-width:230px;justify-self:start;margin-left:8px}
+  .parts,.lines,.other ul{grid-template-columns:1fr}
+      section.block{padding:60px 0}
+}
+@media (max-width:520px){
+  body{font-size:17px}
+  .wrap{padding:0 16px}
+  .bar .wrap{font-size:10.5px}
+  .btn{width:100%;justify-content:center}
+    .term{font-size:12px}
+  footer .fr{text-align:left}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
+
+.hero.topic{padding:40px 0 60px}
+.hero.topic .wrap{display:block}
+.hero.topic h1{font-size:clamp(44px,8vw,84px);max-width:900px}
+.hero.topic .tag{color:var(--mint);margin-bottom:14px}
+.toc{display:flex;flex-wrap:wrap;gap:8px;margin-top:26px}
+.toc a{font-family:var(--mono);font-size:12.5px;color:#cfe9df;border:1px solid var(--line);border-radius:999px;padding:6px 12px;text-decoration:none}
+.toc a:hover{border-color:var(--amber);color:var(--amber)}
+.doc{max-width:780px;margin:0 auto}
+.pg{padding:64px 0;border-bottom:2px solid var(--rule)}
+.pg:last-of-type{border-bottom:0}
+.pghead{position:relative;margin-bottom:22px;padding-right:160px}
+.kick{font-family:var(--mono);font-size:12.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--teal);font-weight:700}
+.pghead h2{font-size:clamp(36px,6vw,54px);line-height:.95;margin:6px 0 10px}
+.psub{font-family:var(--sans);font-weight:500;color:var(--teal);font-size:20px}
+.hand{position:absolute;right:0;top:34px;width:160px;font-family:Hand,cursive;font-weight:500;color:var(--coral);font-size:23px;line-height:1.08;transform:rotate(5deg)}
+.def{border-left:6px solid var(--amber);padding:4px 0 4px 18px;margin:0 0 18px;font-style:italic;font-size:19px}
+.doc p{margin-bottom:14px}
+.mini{font-family:var(--sans);font-weight:700;text-transform:uppercase;font-size:17px;letter-spacing:.01em;margin:28px 0 8px}
+.chev{list-style:none;margin:0 0 16px}
+.chev li{position:relative;padding-left:24px;margin-bottom:8px}
+.chev li::before{content:"›";position:absolute;left:4px;top:-1px;color:var(--ink);font-family:var(--sans);font-weight:900}
+.checks{display:grid;grid-template-columns:1fr 1fr;gap:4px 28px;margin:6px 0 18px}
+.checks h4{font-family:var(--sans);font-weight:700;font-size:16px;margin:8px 0 6px}
+.checks ul{list-style:none}
+.checks li{position:relative;padding-left:28px;margin-bottom:6px;font-size:17px;line-height:1.4}
+.checks li::before{content:"";position:absolute;left:0;top:4px;width:14px;height:14px;border:1.5px solid var(--ink);border-radius:2px;background:var(--card)}
+.co{border-radius:0 8px 8px 0;padding:14px 18px;margin:20px 0;font-size:17px}
+.co b.lab{font-family:var(--sans);font-weight:700}
+.co.y{background:var(--amber-soft);border-left:6px solid var(--amber)}
+.co.t{background:var(--teal-soft);border-left:6px solid var(--teal)}
+.co.d{background:var(--ink);color:var(--paper);border-left:6px solid var(--coral)}
+.co.d b.lab{color:var(--amber)}
+.co.d a{color:var(--amber)}
+.co h4{font-family:var(--sans);font-weight:700;font-size:17px;margin-bottom:4px}
+.co.d h4{color:var(--amber)}
+.term.inline{margin:18px 0;max-width:none;font-size:13.5px}
+.fine{font-family:var(--mono);font-size:12px;color:var(--grey);line-height:1.5;margin-top:6px}
+.fig{margin:16px 0 6px;max-width:660px}
+.fig img{width:100%;height:auto}
+.three{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;border-bottom:1px solid var(--rule);padding-bottom:12px;margin-bottom:10px;font-size:16px}
+.three b{font-family:var(--serif)}
+.sevs{display:flex;flex-direction:column;gap:12px;margin-bottom:18px}
+.sev{background:var(--card);border:1.5px solid var(--ink);border-radius:8px;padding:12px 16px}
+.sev h3{font-family:var(--sans);font-weight:900;text-transform:uppercase;font-size:16.5px;display:flex;justify-content:space-between;gap:12px;align-items:center;margin-bottom:4px}
+.sev p{margin:0;font-size:16.5px;line-height:1.45}
+.badge{font-family:var(--mono);font-size:11px;font-weight:700;letter-spacing:.08em;border-radius:3px;padding:2px 7px;white-space:nowrap}
+.b-crit{background:#b3261e;color:#fff}.b-high{background:#e07b24;color:#fff}.b-med{background:var(--amber);color:var(--ink)}
+.steps{list-style:none;margin:6px 0 18px}
+.steps li{display:grid;grid-template-columns:34px 1fr;gap:12px;margin-bottom:14px}
+.steps .num{width:28px;height:28px;border-radius:50%;background:var(--teal);color:#fff;font-family:var(--sans);font-weight:700;font-size:14px;display:flex;align-items:center;justify-content:center;margin-top:2px}
+.steps h4{font-family:var(--sans);font-weight:700;text-transform:uppercase;font-size:15.5px}
+.steps p{margin:0;font-size:17px;line-height:1.45}
+.box{background:var(--teal-soft);border-left:6px solid var(--teal);border-radius:0 8px 8px 0;padding:14px 18px;margin:18px 0}
+.box h4{font-family:var(--sans);font-weight:700;font-size:16px;margin-bottom:6px}
+.ticks{list-style:none;font-family:var(--mono);font-size:13.5px;line-height:1.7}
+.ticks li::before{content:"✓ ";color:var(--teal)}
+.fill .ln{display:flex;gap:12px;align-items:center;margin:14px 0}
+.fill .ln::after{content:"";flex:1;border-bottom:1.5px dashed #9a917c;height:1px}
+.fill .ln .num{width:24px;height:24px;font-size:12px}
+.fill .ln .cb{width:14px;height:14px;border:1.5px solid var(--ink);border-radius:2px;background:var(--card)}
+.ws{width:100%;border-collapse:collapse;margin:8px 0 18px;font-size:16px}
+.ws th{font-family:var(--mono);font-size:11.5px;font-weight:400;letter-spacing:.12em;text-transform:uppercase;color:var(--grey);text-align:left;padding:8px 10px;border-bottom:2px solid var(--ink);background:none}
+.ws td{padding:9px 10px;border-bottom:1px solid var(--rule);vertical-align:top;border-left:0;border-right:0;border-top:0;background:none}
+.ws.blank td{height:40px}
+.ws td.q{font-style:italic;color:#9b3d27}
+.ws td.k{font-family:var(--sans);font-weight:700;font-size:15px}
+.ws.vs td{width:50%}
+.basics h4{font-family:var(--sans);font-weight:700;text-transform:uppercase;font-size:16px;margin:18px 0 4px}
+.basics p{margin:0}
+.audit{display:grid;grid-template-columns:1fr 1fr;gap:6px 28px;font-size:15.5px;margin:6px 0}
+.audit div{display:flex;justify-content:space-between;border-bottom:1px solid var(--rule);padding:6px 0}
+.audit span{font-family:var(--mono);color:var(--grey);letter-spacing:.15em}
+.stats{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:8px 0}
+.stat{background:var(--ink);color:var(--paper);border-radius:8px;padding:14px 16px}
+.stat b{display:block;font-family:var(--sans);font-weight:900;font-size:40px;line-height:1;color:var(--amber);margin-bottom:6px}
+.stat span{font-size:15.5px;line-height:1.35;display:block}
+.ideas{columns:2;column-gap:28px}
+.ideas li{break-inside:avoid}
+.ex{background:var(--teal-soft);border-left:6px solid var(--teal);border-radius:0 8px 8px 0;padding:12px 18px;margin:18px 0}
+.ex h4{font-family:var(--sans);font-weight:700;font-size:15.5px;margin-bottom:4px}
+.ex .ws{margin:0}
+.ws-note{font-family:var(--mono);font-size:12px;color:var(--teal);margin:10px 0 18px}
+.ws-note a{color:var(--teal)}
+.gethelp{background:var(--ink);color:var(--paper);border-left:6px solid var(--coral);border-radius:0 12px 12px 0;padding:20px 22px;margin-top:48px}
+.gethelp h3{font-family:var(--sans);color:var(--amber);font-size:20px;margin-bottom:6px}
+.gethelp a{color:var(--amber);font-weight:700}
+.guidecta{background:#efe9dc;border:1px solid var(--rule);border-radius:14px;padding:24px;margin-top:28px}
+.guidecta h3{font-family:var(--sans);font-weight:900;text-transform:uppercase;font-size:22px;margin-bottom:8px}
+.guidecta .btn.ghost{color:var(--ink);border-color:var(--ink)}
+.more{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:18px}
+.more a{display:block;text-decoration:none;background:var(--card);border:1.5px solid var(--ink);border-radius:12px;padding:18px 20px}
+.more a b{display:block;font-family:var(--sans);font-weight:900;text-transform:uppercase;font-size:19px}
+.more a span{font-size:15.5px;color:#2f3747}
+.more a:hover{border-color:var(--teal)}
+@media (max-width:700px){
+  .pghead{padding-right:0}
+  .hand{position:static;width:auto;transform:rotate(-2deg);margin:4px 0 10px;font-size:22px}
+  .hand br{display:none}
+  .checks,.audit,.more,.stats{grid-template-columns:1fr}
+  .three{grid-template-columns:1fr;gap:8px}
+  .ideas{columns:1}
+  .pg{padding:48px 0}
+}
+</style>
+<script data-goatcounter="https://selfpwn.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</head>
+<body>
+<div class="bar"><div class="wrap"><a href="/" style="color:var(--sage);font-weight:400">← Self Pwning</a><a href="/#help">Need help now? ↓</a></div></div>
+<header class="hero topic">
+  <div class="wrap">
+    <p class="tag">// Part 2 · Burnout</p>
+    <h1>Burnout in <span>cyber security.</span></h1>
+    <p class="lede">What happens when "too much" never ends: how to spot burnout, how it differs from stress, and how to recover. From the free Self Pwning field guide.</p>
+    <div class="cta">
+      <a class="btn primary" href="/Self-Pwning-Field-Guide.pdf" target="_blank" rel="noopener">Read the full guide <small>20 pages</small></a>
+      <a class="btn ghost" href="/Self-Pwning-Field-Guide.pdf" download>Download PDF</a>
+    </div>
+    <nav class="toc" aria-label="On this page"><a href="#what-is-burnout">What is burnout?</a><a href="#stress-vs-burnout">Stress vs. burnout</a><a href="#dealing-with-burnout">Dealing with burnout</a><a href="#burnout-go-bag">Your burnout go-bag</a></nav>
+  </div>
+</header>
+<main>
+<div class="wrap"><div class="doc">
+<section class="pg" id="what-is-burnout"><header class="pghead"><p class="kick">// Part 2 · Burnout</p><h2>What is<br>burnout?</h2><p class="hand" aria-hidden="true">running on 2%<br>is not a personality</p><p class="psub">What happens when "too much" never ends</p></header>
+<blockquote class="def">A state of emotional, physical and mental exhaustion caused by prolonged or chronic stress, especially from work, study or caring for others.</blockquote>
+<ul class="chev"><li><b>Not a medical condition</b> and there's no definitive test, but it has very recognisable signs.</li><li><b>Remember the curve.</b> Live on the "too much" side for long enough and burnout is where you end up. (See the <a href="/stress-and-anxiety/#what-is-stress">Yerkes–Dodson curve</a>.)</li></ul>
+<div class="checks"><div><h4>In your body</h4><ul><li>Exhaustion and fatigue</li><li>Sleep problems</li><li>Muscle aches and headaches</li><li>Getting ill more often</li><li>Stomach problems</li></ul></div><div><h4>In how you behave</h4><ul><li>Eating too much or too little</li><li>Irritability, mood changes</li><li>Withdrawing socially</li><li>Emotional detachment</li><li>Procrastination</li><li>Unable to concentrate</li></ul></div></div>
+<div class="co y"><b class=lab>Work-shaped or life-shaped?</b> A useful test: if your energy and curiosity come back the moment the laptop closes (studying, side projects, hobbies), the problem is probably the job, not you.</div>
+<div class="co d"><b class=lab>Escalate now:</b> if burnout has turned into feeling hopeless, or thinking life isn't worth living, please talk to someone today. <a href="/#help">Helplines are here.</a></div>
+</section><section class="pg" id="stress-vs-burnout"><header class="pghead"><p class="kick">// Root cause analysis</p><h2>Stress vs.<br>burnout</h2><p class="hand" aria-hidden="true">tick the ones<br>that sound<br>familiar</p><p class="psub">Too much of everything vs. not enough of anything</p></header><table class="ws vs"><thead><tr><th>Stress</th><th>Burnout</th></tr></thead><tbody><tr><td>Over-engagement</td><td>Disengagement</td></tr><tr><td>Emotions are overactive</td><td>Emotions are blunted</td></tr><tr><td>Urgency and hyperactivity</td><td>Helplessness and hopelessness</td></tr><tr><td>Loss of energy</td><td>Loss of motivation, ideals and hope</td></tr><tr><td>Can lead to anxiety disorders</td><td>Can lead to detachment and depression</td></tr><tr><td>Damage is mainly physical</td><td>Damage is mainly emotional</td></tr></tbody></table>
+<h3 class="mini">Common causes at work</h3><div class="checks"><div><h4>Workload &amp; pressure</h4><ul><li>Unmanageable workload</li><li>Unrealistic expectations</li><li>Long hours</li></ul><h4>Control &amp; recognition</h4><ul><li>Little say in how you work</li><li>Effort goes unrecognised</li></ul></div><div><h4>Environment</h4><ul><li>Toxic culture</li><li>Unclear role or expectations</li><li>No manager, no support</li><li>Unfair treatment</li></ul><h4>Balance</h4><ul><li>Work spilling into life</li><li>Job insecurity</li></ul></div></div><div class="co y"><b class=lab>Burnout is usually an organisational problem</b> that shows up in a person. Fixing it is not just on you.</div></section><section class="pg" id="dealing-with-burnout"><header class="pghead"><p class="kick">// Eradication &amp; recovery</p><h2>Dealing with<br>burnout</h2><p class="hand" aria-hidden="true">recovery is a<br>project. give it<br>a plan</p><p class="psub">Four workstreams for recovery</p></header>
+<div class="basics">
+<h4>01 · Prioritise rest &amp; self-care</h4><ul class="chev"><li><b>Take time off.</b> Use your leave to fully disconnect, not to catch up on email.</li><li><b>Take regular breaks.</b> Stretch, walk, or just step away.</li><li><b>Prioritise sleep</b> with a relaxing, screen-free bedtime routine.</li><li><b>Eat well.</b> Go easy on sugar, caffeine and alcohol.</li></ul>
+<h4>02 · Seek support</h4><ul class="chev"><li><b>Talk to others:</b> friends, family, colleagues.</li><li><b>Consider professional help.</b> A therapist or counsellor can give you real strategies.</li><li><b>Talk to your manager.</b> If it's work-related, workload can be adjusted. They can't fix what they don't know about.</li></ul>
+<h4>03 · Set boundaries</h4><ul class="chev"><li><b>Learn to say no</b> to commitments that tip you over.</li><li><b>Separate work and life</b> with clear limits on your hours.</li><li><b>Disconnect.</b> Schedule time away from all devices.</li></ul>
+<h4>04 · Re-engage with life</h4><ul class="chev"><li><b>Exercise regularly.</b> A 10-minute walk lifts your mood.</li><li><b>Make time for hobbies</b> and people that bring you joy.</li><li><b>Practise mindfulness:</b> meditation, deep breathing, staying grounded.</li></ul>
+</div>
+<div class="co t"><b class=lab>Be patient.</b> Recovering from burnout usually takes weeks or months, not a long weekend. Progress counts even when it's slow.</div>
+</section><section class="pg" id="burnout-go-bag"><header class="pghead"><p class="kick">// Pre-incident preparation</p><h2>Your burnout<br>go-bag</h2><p class="hand" aria-hidden="true">snacks are a<br>legitimate<br>security control</p><p class="psub">Pack it before you need it</p></header>
+<p>A go-bag is a list of small, ready-made things that reliably make you feel more human. When you're running low, you don't need to think. You just grab from the bag.</p>
+<div class="box"><h4>Ideas to steal</h4><ul class="chev ideas" style="margin:0"><li>Call a family member weekly</li><li>Join a local club (running, climbing, anything)</li><li>Walk instead of drive</li><li>Uplifting podcasts and calm music</li><li>Favourite snacks always to hand</li><li>Alcohol-free drinks in the fridge</li><li>A reminder to text a friend</li><li>A catch-up with a mate</li><li>Keep your CV up to date. Options feel like control</li><li>Submit a talk to a community con</li></ul></div>
+<h3 class="mini">My go-bag</h3><div class="fill"><div class="ln"><span class="cb"></span></div><div class="ln"><span class="cb"></span></div><div class="ln"><span class="cb"></span></div><div class="ln"><span class="cb"></span></div><div class="ln"><span class="cb"></span></div><div class="ln"><span class="cb"></span></div><div class="ln"><span class="cb"></span></div><div class="ln"><span class="cb"></span></div></div><p class="ws-note">✎ Fill this in on the <a href="/Self-Pwning-Field-Guide-PRINT-booklet.pdf">printable guide</a></p>
+</section>
+<div class="guidecta">
+  <h3>Print it for your team</h3>
+  <p>This page is pages 10 to 13 of the free Self Pwning field guide. The PDF has the worksheets ready to fill in, and prints as an A4 booklet.</p>
+  <div class="cta" style="margin-top:14px"><a class="btn primary" href="/Self-Pwning-Field-Guide.pdf" target="_blank" rel="noopener">Read the guide</a><a class="btn ghost" href="/Self-Pwning-Field-Guide-PRINT-booklet.pdf" download>Print booklet</a></div>
+</div>
+<div class="gethelp" role="note">
+  <h3>Need to talk now?</h3>
+  <p>If you're in immediate danger, call your local emergency number: 999 (UK) · 911 (US/Canada) · 112 (EU) · 000 (Australia). For free, confidential support, see the <a href="/#help">helplines on the home page</a>.</p>
+</div>
+<p style="font-size:15px;color:var(--grey);margin-top:22px">Not medical advice. This guide is written by a security person, not a mental health professional. If you're struggling, talk to a GP, doctor or therapist.</p>
+<h2 style="margin-top:56px">More from the guide</h2>
+<div class="more"><a href="/stress-and-anxiety/"><b>Stress &amp; anxiety</b><span>The stress curve, signs, why cyber is exposed, everyday controls</span></a><a href="/imposter-syndrome/"><b>Imposter syndrome</b><span>The thoughts to spot, and two worksheets</span></a></div>
+<div style="height:72px"></div>
+</div></div>
+</main>
+<footer>
+  <div class="wrap">
+    <div>
+      <div class="tagline">Don't self pwn.<br><span>Patch. Rest. Repeat.</span></div>
+      <strong>Sam Macdonald</strong> · <a href="https://www.linkedin.com/in/sam-macdonald-66967642/" rel="noopener">LinkedIn</a> · <a href="/contact/">Contact</a>
+    </div>
+    <div class="fr">
+      Self Pwning · Field Guide Vol. 01<br>
+      Licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" rel="license noopener">CC BY-NC-ND 4.0</a><br>
+      Not a substitute for professional help
+    </div>
+  </div>
+</footer>
+</body>
+</html>

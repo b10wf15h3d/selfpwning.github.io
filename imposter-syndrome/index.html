@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Imposter syndrome in cyber security: how to fight back · Self Pwning</title>
+<meta name="description" content="Imposter syndrome in cyber security: what it is, why it thrives in our industry, the thoughts to watch for, and two worksheets to fight back. From the free Self Pwning field guide.">
+<meta name="author" content="Sam Macdonald">
+<link rel="canonical" href="https://selfpwning.com/imposter-syndrome/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Self Pwning">
+<meta property="og:locale" content="en_GB">
+<meta property="og:title" content="Imposter syndrome in cyber security: how to fight back">
+<meta property="og:description" content="Imposter syndrome in cyber security: what it is, why it thrives in our industry, the thoughts to watch for, and two worksheets to fight back. From the free Self Pwning field guide.">
+<meta property="og:url" content="https://selfpwning.com/imposter-syndrome/">
+<meta property="og:image" content="https://selfpwning.com/assets/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#1b2230">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Article", "headline": "Imposter syndrome in cyber security.", "description": "Imposter syndrome in cyber security: what it is, why it thrives in our industry, the thoughts to watch for, and two worksheets to fight back. From the free Self Pwning field guide.", "url": "https://selfpwning.com/imposter-syndrome/", "inLanguage": "en-GB", "author": {"@id": "https://selfpwning.com/#sam"}, "publisher": {"@id": "https://selfpwning.com/#sam"}, "isPartOf": {"@id": "https://selfpwning.com/#website"}, "image": "https://selfpwning.com/assets/og.jpg", "isAccessibleForFree": true, "license": "https://creativecommons.org/licenses/by-nc-nd/4.0/"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Self Pwning", "item": "https://selfpwning.com/"}, {"@type": "ListItem", "position": 2, "name": "Imposter syndrome", "item": "https://selfpwning.com/imposter-syndrome/"}]}]}</script>
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="preload" href="/assets/fonts/archivo-latin-900-normal.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:Archivo;font-weight:500;font-display:swap;src:url(/assets/fonts/archivo-latin-500-normal.woff2) format("woff2")}
+@font-face{font-family:Archivo;font-weight:700;font-display:swap;src:url(/assets/fonts/archivo-latin-700-normal.woff2) format("woff2")}
+@font-face{font-family:Archivo;font-weight:900;font-display:swap;src:url(/assets/fonts/archivo-latin-900-normal.woff2) format("woff2")}
+@font-face{font-family:Serif4;font-weight:400;font-display:swap;src:url(/assets/fonts/source-serif-4-latin-400-normal.woff2) format("woff2")}
+@font-face{font-family:Serif4;font-weight:400;font-style:italic;font-display:swap;src:url(/assets/fonts/source-serif-4-latin-400-italic.woff2) format("woff2")}
+@font-face{font-family:Serif4;font-weight:700;font-display:swap;src:url(/assets/fonts/source-serif-4-latin-700-normal.woff2) format("woff2")}
+@font-face{font-family:Mono;font-weight:400;font-display:swap;src:url(/assets/fonts/jetbrains-mono-latin-400-normal.woff2) format("woff2")}
+@font-face{font-family:Mono;font-weight:700;font-display:swap;src:url(/assets/fonts/jetbrains-mono-latin-700-normal.woff2) format("woff2")}
+@font-face{font-family:Hand;font-weight:500;font-display:swap;src:url(/assets/fonts/caveat-latin-500-normal.woff2) format("woff2")}
+
+:root{
+  --ink:#1b2230; --ink-2:#141a25; --line:#3a4456; --paper:#f7f3ea; --card:#fffdf8;
+  --teal:#2e7d6f; --teal-soft:#e2eee8; --mint:#8fd1bd; --sage:#9fb8b0;
+  --amber:#f2c14e; --amber-soft:#fbefcc; --coral:#d9573a; --grey:#6b7280; --rule:#d8d0bf;
+  --serif:Serif4,Georgia,serif; --sans:Archivo,system-ui,sans-serif; --mono:Mono,ui-monospace,Menlo,monospace;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--paper);color:var(--ink);font-family:var(--serif);font-size:18px;line-height:1.55}
+a{color:inherit}
+img{max-width:100%;height:auto;display:block}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+.tag{font-family:var(--mono);font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--teal);font-weight:700}
+h2{font-family:var(--sans);font-weight:900;text-transform:uppercase;font-size:clamp(30px,5vw,44px);line-height:1;letter-spacing:-.01em;margin:8px 0 10px}
+.sub{font-family:var(--sans);font-weight:500;color:var(--teal);font-size:19px;margin-bottom:26px}
+.note{font-family:Hand,cursive;font-weight:500;color:var(--coral);font-size:24px;line-height:1.05}
+:focus-visible{outline:3px solid var(--amber);outline-offset:3px;border-radius:4px}
+.skip{position:absolute;left:-999px;top:8px;background:var(--amber);color:var(--ink);padding:8px 12px;font-family:var(--sans);font-weight:700;z-index:10}
+.skip:focus{left:8px}
+
+/* top bar */
+.bar{background:var(--ink);color:var(--sage);font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase}
+.bar .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px;padding-top:14px;padding-bottom:14px}
+.bar a{color:var(--amber);text-decoration:none;font-weight:700;white-space:nowrap}
+.bar a:hover{text-decoration:underline}
+
+/* hero */
+.hero{background:var(--ink);color:var(--paper);padding:40px 0 72px;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:center}
+.hero h1{font-family:var(--sans);font-weight:900;text-transform:uppercase;font-size:clamp(56px,10vw,108px);line-height:.88;letter-spacing:-.015em}
+.hero h1 span{color:var(--amber)}
+.hero .tag{color:var(--mint);margin-bottom:14px}
+.hero .lede{font-family:var(--sans);font-weight:500;font-size:clamp(19px,2.2vw,22px);line-height:1.35;color:#d6e7e0;margin:22px 0 26px;max-width:560px}
+.term{font-family:var(--mono);font-size:14px;line-height:1.7;background:var(--ink-2);border:1px solid var(--line);border-radius:10px;padding:16px 18px;color:#cfe9df;max-width:560px;overflow-x:auto}
+.term .p{color:var(--amber)} .term .h{color:#6f8a82} .term .o{color:#f08a6c}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.btn{display:inline-flex;align-items:center;gap:10px;font-family:var(--sans);font-weight:700;font-size:17px;text-decoration:none;border-radius:10px;padding:14px 20px;border:2px solid transparent;transition:transform .12s ease}
+.btn:hover{transform:translateY(-1px)}
+.btn.primary{background:var(--amber);color:var(--ink)}
+.btn.ghost{border-color:#56627a;color:var(--paper)}
+.btn.ghost:hover{border-color:var(--amber)}
+.print{font-family:var(--sans);font-size:16px;color:#d6e7e0;margin-top:16px}
+.print a{color:var(--amber);font-weight:700}
+.print span{font-family:var(--mono);font-size:12.5px;color:var(--sage)}
+.btn small{font-family:var(--mono);font-weight:400;font-size:12px;opacity:.8}
+.meta{font-family:var(--mono);font-size:12.5px;letter-spacing:.06em;color:var(--sage);margin-top:16px}
+.cover{position:relative;justify-self:center;max-width:360px;width:100%}
+.cover img{border-radius:6px;box-shadow:0 30px 60px rgba(0,0,0,.45),0 0 0 1px #2b3446;transform:rotate(2.5deg)}
+
+/* inside */
+section.block{padding:84px 0}
+.parts{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.part{background:var(--card);border:1.5px solid var(--ink);border-radius:12px;padding:22px 22px 20px}
+.part .n{font-family:var(--mono);font-size:12px;letter-spacing:.14em;color:var(--teal);font-weight:700;text-transform:uppercase}
+.part h3{font-family:var(--sans);font-weight:900;text-transform:uppercase;font-size:22px;margin:6px 0 8px}
+.part p{font-size:16.5px;line-height:1.5}
+.part .sev{display:inline-block;font-family:var(--mono);font-size:11px;font-weight:700;letter-spacing:.08em;border-radius:4px;padding:2px 7px;margin-top:12px}
+.also{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+.chip{font-family:var(--mono);font-size:13px;background:var(--teal-soft);color:#1f5a4f;border-radius:999px;padding:7px 13px}
+
+/* help */
+.help{background:#efe9dc;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.danger{background:var(--ink);color:var(--paper);border-left:6px solid var(--coral);border-radius:0 12px 12px 0;padding:20px 22px;margin-bottom:28px}
+.danger h3{font-family:var(--sans);color:var(--amber);font-size:20px;margin-bottom:4px}
+.danger b{font-family:var(--sans)}
+.lines{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.line{background:var(--card);border:1px solid var(--rule);border-radius:12px;padding:18px 20px;display:flex;flex-direction:column;gap:8px}
+.line h3{font-family:var(--sans);font-weight:700;font-size:18px}
+.line h3 span{font-family:var(--mono);font-weight:400;font-size:12px;letter-spacing:.08em;color:var(--grey);text-transform:uppercase;margin-left:6px}
+.line p{font-size:16px;line-height:1.45;color:#2f3747}
+.acts{display:flex;flex-wrap:wrap;gap:8px;margin-top:auto;padding-top:4px}
+.act{font-family:var(--mono);font-size:13.5px;font-weight:700;text-decoration:none;background:var(--ink);color:var(--paper);border-radius:8px;padding:9px 12px;white-space:nowrap}
+.act:hover{background:var(--teal)}
+.act.alt{background:transparent;color:var(--ink);border:1.5px solid var(--ink)}
+.act.alt:hover{background:var(--ink);color:var(--paper)}
+.small{font-family:var(--mono);font-size:12.5px;color:var(--grey);margin-top:18px}
+.other{margin-top:34px}
+.other h3{font-family:var(--sans);font-weight:700;text-transform:uppercase;font-size:18px;letter-spacing:.02em;margin-bottom:10px}
+.other ul{list-style:none;display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.other li{border-left:4px solid var(--teal);background:var(--teal-soft);border-radius:0 10px 10px 0;padding:14px 16px;font-size:16.5px}
+
+/* about */
+.about .wrap{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+.about p{margin-bottom:14px}
+.updates{background:var(--ink);color:var(--paper);border-radius:14px;padding:26px 26px 24px}
+.updates h3{font-family:var(--sans);font-weight:900;text-transform:uppercase;font-size:24px;margin:4px 0 10px}
+.updates p{color:#d6e7e0;font-size:16.5px}
+.updates .tag{color:var(--mint)}
+
+/* footer */
+footer{background:var(--ink);color:var(--sage);font-family:var(--mono);font-size:12.5px;letter-spacing:.04em;line-height:1.7;padding:40px 0}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:20px}
+footer strong{font-family:var(--sans);color:var(--paper);font-size:16px;letter-spacing:0}
+footer a{color:var(--amber)}
+footer .fr{text-align:right;align-self:flex-end}
+.tagline{font-family:var(--sans);font-weight:700;font-size:20px;line-height:1.25;color:#d6e7e0;margin-bottom:10px;letter-spacing:0}
+.tagline span{color:var(--amber)}
+
+@media (max-width:860px){
+  .hero .wrap,.about .wrap{grid-template-columns:1fr;gap:40px}
+  .cover{max-width:230px;justify-self:start;margin-left:8px}
+  .parts,.lines,.other ul{grid-template-columns:1fr}
+      section.block{padding:60px 0}
+}
+@media (max-width:520px){
+  body{font-size:17px}
+  .wrap{padding:0 16px}
+  .bar .wrap{font-size:10.5px}
+  .btn{width:100%;justify-content:center}
+    .term{font-size:12px}
+  footer .fr{text-align:left}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
+
+.hero.topic{padding:40px 0 60px}
+.hero.topic .wrap{display:block}
+.hero.topic h1{font-size:clamp(44px,8vw,84px);max-width:900px}
+.hero.topic .tag{color:var(--mint);margin-bottom:14px}
+.toc{display:flex;flex-wrap:wrap;gap:8px;margin-top:26px}
+.toc a{font-family:var(--mono);font-size:12.5px;color:#cfe9df;border:1px solid var(--line);border-radius:999px;padding:6px 12px;text-decoration:none}
+.toc a:hover{border-color:var(--amber);color:var(--amber)}
+.doc{max-width:780px;margin:0 auto}
+.pg{padding:64px 0;border-bottom:2px solid var(--rule)}
+.pg:last-of-type{border-bottom:0}
+.pghead{position:relative;margin-bottom:22px;padding-right:160px}
+.kick{font-family:var(--mono);font-size:12.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--teal);font-weight:700}
+.pghead h2{font-size:clamp(36px,6vw,54px);line-height:.95;margin:6px 0 10px}
+.psub{font-family:var(--sans);font-weight:500;color:var(--teal);font-size:20px}
+.hand{position:absolute;right:0;top:34px;width:160px;font-family:Hand,cursive;font-weight:500;color:var(--coral);font-size:23px;line-height:1.08;transform:rotate(5deg)}
+.def{border-left:6px solid var(--amber);padding:4px 0 4px 18px;margin:0 0 18px;font-style:italic;font-size:19px}
+.doc p{margin-bottom:14px}
+.mini{font-family:var(--sans);font-weight:700;text-transform:uppercase;font-size:17px;letter-spacing:.01em;margin:28px 0 8px}
+.chev{list-style:none;margin:0 0 16px}
+.chev li{position:relative;padding-left:24px;margin-bottom:8px}
+.chev li::before{content:"›";position:absolute;left:4px;top:-1px;color:var(--ink);font-family:var(--sans);font-weight:900}
+.checks{display:grid;grid-template-columns:1fr 1fr;gap:4px 28px;margin:6px 0 18px}
+.checks h4{font-family:var(--sans);font-weight:700;font-size:16px;margin:8px 0 6px}
+.checks ul{list-style:none}
+.checks li{position:relative;padding-left:28px;margin-bottom:6px;font-size:17px;line-height:1.4}
+.checks li::before{content:"";position:absolute;left:0;top:4px;width:14px;height:14px;border:1.5px solid var(--ink);border-radius:2px;background:var(--card)}
+.co{border-radius:0 8px 8px 0;padding:14px 18px;margin:20px 0;font-size:17px}
+.co b.lab{font-family:var(--sans);font-weight:700}
+.co.y{background:var(--amber-soft);border-left:6px solid var(--amber)}
+.co.t{background:var(--teal-soft);border-left:6px solid var(--teal)}
+.co.d{background:var(--ink);color:var(--paper);border-left:6px solid var(--coral)}
+.co.d b.lab{color:var(--amber)}
+.co.d a{color:var(--amber)}
+.co h4{font-family:var(--sans);font-weight:700;font-size:17px;margin-bottom:4px}
+.co.d h4{color:var(--amber)}
+.term.inline{margin:18px 0;max-width:none;font-size:13.5px}
+.fine{font-family:var(--mono);font-size:12px;color:var(--grey);line-height:1.5;margin-top:6px}
+.fig{margin:16px 0 6px;max-width:660px}
+.fig img{width:100%;height:auto}
+.three{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;border-bottom:1px solid var(--rule);padding-bottom:12px;margin-bottom:10px;font-size:16px}
+.three b{font-family:var(--serif)}
+.sevs{display:flex;flex-direction:column;gap:12px;margin-bottom:18px}
+.sev{background:var(--card);border:1.5px solid var(--ink);border-radius:8px;padding:12px 16px}
+.sev h3{font-family:var(--sans);font-weight:900;text-transform:uppercase;font-size:16.5px;display:flex;justify-content:space-between;gap:12px;align-items:center;margin-bottom:4px}
+.sev p{margin:0;font-size:16.5px;line-height:1.45}
+.badge{font-family:var(--mono);font-size:11px;font-weight:700;letter-spacing:.08em;border-radius:3px;padding:2px 7px;white-space:nowrap}
+.b-crit{background:#b3261e;color:#fff}.b-high{background:#e07b24;color:#fff}.b-med{background:var(--amber);color:var(--ink)}
+.steps{list-style:none;margin:6px 0 18px}
+.steps li{display:grid;grid-template-columns:34px 1fr;gap:12px;margin-bottom:14px}
+.steps .num{width:28px;height:28px;border-radius:50%;background:var(--teal);color:#fff;font-family:var(--sans);font-weight:700;font-size:14px;display:flex;align-items:center;justify-content:center;margin-top:2px}
+.steps h4{font-family:var(--sans);font-weight:700;text-transform:uppercase;font-size:15.5px}
+.steps p{margin:0;font-size:17px;line-height:1.45}
+.box{background:var(--teal-soft);border-left:6px solid var(--teal);border-radius:0 8px 8px 0;padding:14px 18px;margin:18px 0}
+.box h4{font-family:var(--sans);font-weight:700;font-size:16px;margin-bottom:6px}
+.ticks{list-style:none;font-family:var(--mono);font-size:13.5px;line-height:1.7}
+.ticks li::before{content:"✓ ";color:var(--teal)}
+.fill .ln{display:flex;gap:12px;align-items:center;margin:14px 0}
+.fill .ln::after{content:"";flex:1;border-bottom:1.5px dashed #9a917c;height:1px}
+.fill .ln .num{width:24px;height:24px;font-size:12px}
+.fill .ln .cb{width:14px;height:14px;border:1.5px solid var(--ink);border-radius:2px;background:var(--card)}
+.ws{width:100%;border-collapse:collapse;margin:8px 0 18px;font-size:16px}
+.ws th{font-family:var(--mono);font-size:11.5px;font-weight:400;letter-spacing:.12em;text-transform:uppercase;color:var(--grey);text-align:left;padding:8px 10px;border-bottom:2px solid var(--ink);background:none}
+.ws td{padding:9px 10px;border-bottom:1px solid var(--rule);vertical-align:top;border-left:0;border-right:0;border-top:0;background:none}
+.ws.blank td{height:40px}
+.ws td.q{font-style:italic;color:#9b3d27}
+.ws td.k{font-family:var(--sans);font-weight:700;font-size:15px}
+.ws.vs td{width:50%}
+.basics h4{font-family:var(--sans);font-weight:700;text-transform:uppercase;font-size:16px;margin:18px 0 4px}
+.basics p{margin:0}
+.audit{display:grid;grid-template-columns:1fr 1fr;gap:6px 28px;font-size:15.5px;margin:6px 0}
+.audit div{display:flex;justify-content:space-between;border-bottom:1px solid var(--rule);padding:6px 0}
+.audit span{font-family:var(--mono);color:var(--grey);letter-spacing:.15em}
+.stats{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:8px 0}
+.stat{background:var(--ink);color:var(--paper);border-radius:8px;padding:14px 16px}
+.stat b{display:block;font-family:var(--sans);font-weight:900;font-size:40px;line-height:1;color:var(--amber);margin-bottom:6px}
+.stat span{font-size:15.5px;line-height:1.35;display:block}
+.ideas{columns:2;column-gap:28px}
+.ideas li{break-inside:avoid}
+.ex{background:var(--teal-soft);border-left:6px solid var(--teal);border-radius:0 8px 8px 0;padding:12px 18px;margin:18px 0}
+.ex h4{font-family:var(--sans);font-weight:700;font-size:15.5px;margin-bottom:4px}
+.ex .ws{margin:0}
+.ws-note{font-family:var(--mono);font-size:12px;color:var(--teal);margin:10px 0 18px}
+.ws-note a{color:var(--teal)}
+.gethelp{background:var(--ink);color:var(--paper);border-left:6px solid var(--coral);border-radius:0 12px 12px 0;padding:20px 22px;margin-top:48px}
+.gethelp h3{font-family:var(--sans);color:var(--amber);font-size:20px;margin-bottom:6px}
+.gethelp a{color:var(--amber);font-weight:700}
+.guidecta{background:#efe9dc;border:1px solid var(--rule);border-radius:14px;padding:24px;margin-top:28px}
+.guidecta h3{font-family:var(--sans);font-weight:900;text-transform:uppercase;font-size:22px;margin-bottom:8px}
+.guidecta .btn.ghost{color:var(--ink);border-color:var(--ink)}
+.more{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:18px}
+.more a{display:block;text-decoration:none;background:var(--card);border:1.5px solid var(--ink);border-radius:12px;padding:18px 20px}
+.more a b{display:block;font-family:var(--sans);font-weight:900;text-transform:uppercase;font-size:19px}
+.more a span{font-size:15.5px;color:#2f3747}
+.more a:hover{border-color:var(--teal)}
+@media (max-width:700px){
+  .pghead{padding-right:0}
+  .hand{position:static;width:auto;transform:rotate(-2deg);margin:4px 0 10px;font-size:22px}
+  .hand br{display:none}
+  .checks,.audit,.more,.stats{grid-template-columns:1fr}
+  .three{grid-template-columns:1fr;gap:8px}
+  .ideas{columns:1}
+  .pg{padding:48px 0}
+}
+</style>
+<script data-goatcounter="https://selfpwn.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</head>
+<body>
+<div class="bar"><div class="wrap"><a href="/" style="color:var(--sage);font-weight:400">← Self Pwning</a><a href="/#help">Need help now? ↓</a></div></div>
+<header class="hero topic">
+  <div class="wrap">
+    <p class="tag">// Part 3 · Imposter syndrome</p>
+    <h1>Imposter syndrome in <span>cyber security.</span></h1>
+    <p class="lede">Social engineering, run by your own brain: why imposter syndrome thrives in security, how to spot the thoughts, and how to fight back. From the free Self Pwning field guide.</p>
+    <div class="cta">
+      <a class="btn primary" href="/Self-Pwning-Field-Guide.pdf" target="_blank" rel="noopener">Read the full guide <small>20 pages</small></a>
+      <a class="btn ghost" href="/Self-Pwning-Field-Guide.pdf" download>Download PDF</a>
+    </div>
+    <nav class="toc" aria-label="On this page"><a href="#what-is-imposter-syndrome">What is it?</a><a href="#imposter-syndrome-in-cyber">In cyber</a><a href="#talk-to-others-stop-the-scroll">Talk to others · Stop the scroll</a><a href="#the-bs-list">The BS List</a><a href="#the-cookie-jar">The Cookie Jar</a></nav>
+  </div>
+</header>
+<main>
+<div class="wrap"><div class="doc">
+<section class="pg" id="what-is-imposter-syndrome"><header class="pghead"><p class="kick">// Part 3 · Imposter syndrome</p><h2>Imposter<br>syndrome</h2><p class="hand" aria-hidden="true">if 70%+ feel it,<br>you're in good<br>company</p><p class="psub">Social engineering, run by your own brain</p></header>
+<blockquote class="def">A psychological pattern where you downplay your achievements and believe you're secretly a fraud who doesn't deserve them.</blockquote>
+<p>It's not a medical condition and there's no test for it. It's sometimes called the imposter <i>phenomenon</i> for that reason.</p>
+<div class="checks"><div><h4>Symptoms can include</h4><ul><li>Sensitivity to small mistakes or criticism</li><li>Burnout from overworking</li><li>Fear of success or failure</li></ul></div><div><h4>&nbsp;</h4><ul><li>Impossibly high standards</li><li>Low self-confidence</li><li>Crediting luck or others for your success</li></ul></div></div>
+<h3 class="mini">Who does it affect?</h3>
+<div class="stats">
+<div class="stat"><b>70%+</b><span>of people are estimated to feel like an imposter at some point</span></div>
+<div class="stat"><b>All</b><span>genders are affected</span></div>
+<div class="stat"><b>Age</b><span>Research is mixed: some studies find it eases with age, others find no link.</span></div>
+<div class="stat"><b>Experts</b><span>It's most common where expertise and intelligence are highly valued (hello, cyber)</span></div>
+</div>
+<p class="fine">As with most research here, studies vary and sometimes contradict each other.</p>
+<div class="co y"><b class=lab>Plot twist:</b> worrying you're not good enough usually means you understand how big the field is. Actual frauds rarely lose sleep over it.</div>
+</section><section class="pg" id="imposter-syndrome-in-cyber"><header class="pghead"><p class="kick">// Observed in the wild</p><h2>Imposter syndrome<br>in cyber</h2><p class="hand" aria-hidden="true">heard any of<br>these lately?</p><p class="psub">Offence, defence, GRC, research. Nobody's immune.</p></header><ul class="chev"><li><b>High expectations.</b> Pressure to perform and fear of falling short feed self-doubt.</li><li><b>Constantly evolving tech.</b> New tools, TTPs, cloud, AI. Falling behind feels inevitable.</li><li><b>Fear of failure.</b> When the stakes are high, any mistake feels like proof.</li><li><b>Isolation.</b> Remote work means less casual praise, and more room to imagine people talking behind your back.</li></ul>
+<h3 class="mini">Spot the imposter thoughts</h3><table class="ws "><thead><tr><th>Pattern</th><th>What it sounds like</th></tr></thead><tbody><tr><td class="k">Self-doubt</td><td class="q">"I only got this job through luck. I'll be found out."</td></tr><tr><td class="k">Fear of failure</td><td class="q">"I'm not going to find anything on this test."</td></tr><tr><td class="k">Procrastination</td><td class="q">"If I don't start, I can't prove I'm bad at it."</td></tr><tr><td class="k">Overworking</td><td class="q">"Extra hours will make up for my lack of skill."</td></tr><tr><td class="k">Comparison</td><td class="q">"The last testers found a critical. They must be better."</td></tr><tr><td class="k">Overreacting to feedback</td><td class="q">"Report QA comments mean they've figured me out."</td></tr><tr><td class="k">Downplaying wins</td><td class="q">"Anyone would have found that bug."</td></tr></tbody></table><div class="co t"><h4>The colleague test</h4>Would you say that thought to a teammate who'd just done the same work? If not, it's not a fair assessment. It's the imposter talking.</div></section><section class="pg" id="talk-to-others-stop-the-scroll"><header class="pghead"><p class="kick">// Coping strategies</p><h2>Talk to others.<br>Stop the scroll.</h2><p class="hand" aria-hidden="true">you're comparing<br>your 3am to their<br>highlight reel</p><p class="psub">Two patches for the imposter voice</p></header>
+<h3 class="mini">Talk to others</h3>
+<p><b style="font-family:var(--sans)">Find a mentor</b><br>Someone more experienced who understands the challenges. They don't need to have answers. Listening is enough.</p>
+<p><b style="font-family:var(--sans)">Get a cheerleader (or several)</b><br>A source of positivity to remind you what you're capable of and what you've already overcome. Family and friends count, not just colleagues.</p>
+<p><b style="font-family:var(--sans)">Just talk</b><br>If a mentor feels like one more person to perform for, skip it. A quick chat to get the thoughts out of your head is often enough. Hearing it out loud shows you how inaccurate it sounds.</p>
+<h3 class="mini">Stop the scroll</h3>
+<ul class="chev"><li><b>The comparison loop.</b> The infinite feed shows you everyone's CVEs, bug bounty payouts and shiny tools, but never the hours, the luck or the years behind them.</li><li><b>Confirmation bias.</b> We seek out and remember whatever "proves" we're an imposter.</li><li><b>Small doses.</b> Cap your time. One well-known study found limiting social media to about 30 minutes a day reduced loneliness and low mood.</li></ul>
+<p class="fine">Source: Hunt et al., University of Pennsylvania, Journal of Social and Clinical Psychology (2018).</p>
+<div class="co t"><h4>Feed hygiene</h4>Mute accounts that leave you feeling worse. Set app timers. Follow people who share their failures and learning, not just their wins.</div>
+</section><section class="pg" id="the-bs-list"><header class="pghead"><p class="kick">// Worksheet · Call it out</p><h2>The BS<br>list</h2><p class="hand" aria-hidden="true">your brain lies.<br>evidence<br>doesn't</p><p class="psub">Debunk the obstacles your brain invents</p></header><ol class="steps"><li><span class="num">1</span><div><h4>Goal</h4><p>Write down what you want to achieve.</p></div></li><li><span class="num">2</span><div><h4>Obstacles</h4><p>List what you feel is stopping you.</p></div></li><li><span class="num">3</span><div><h4>Call BS</h4><p>Under each obstacle, write why it's not the barrier you think it is.</p></div></li></ol><div class="ex"><h4>Worked example · Goal: move from the SOC into pentesting</h4><table class="ws vs"><thead><tr><th>Obstacle</th><th>Calling BS</th></tr></thead><tbody><tr><td>"I don't have an offensive cert"</td><td>Years of triaging real attacks means I know what they look like</td></tr><tr><td>"I can't really code"</td><td>I've written plenty of scripts to automate my day job</td></tr><tr><td>"I've never worked with clients"</td><td>I explain incidents to non-technical stakeholders every week</td></tr></tbody></table></div><h3 class="mini">Your turn · Goal:</h3><table class="ws blank vs"><thead><tr><th>Obstacle</th><th>Calling BS</th></tr></thead><tbody><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr></tbody></table><p class="ws-note">✎ Fill this in on the <a href="/Self-Pwning-Field-Guide-PRINT-booklet.pdf">printable guide</a></p></section><section class="pg" id="the-cookie-jar"><header class="pghead"><p class="kick">// Worksheet · Evidence collection</p><h2>The cookie<br>jar</h2><p class="hand" aria-hidden="true">a closed ticket<br>counts as a<br>cookie</p><p class="psub">A method from David Goggins' book <i>Can't Hurt Me</i></p></header><ol class="steps"><li><span class="num">1</span><div><h4>Collect your cookies</h4><p>Notice personal wins, however small: a tough task finished, a fear faced, a kind thing you did.</p></div></li><li><span class="num">2</span><div><h4>Fill your jar</h4><p>Write them down. Each cookie is evidence of your resilience and ability.</p></div></li><li><span class="num">3</span><div><h4>Reach into the jar</h4><p>When doubt hits, read them back. Past wins are proof you can handle the next challenge.</p></div></li></ol>
+<figure class="fig"><img src="/assets/guide/jar.webp" width="1441" height="1125" loading="lazy" alt="Illustration of a cookie jar labelled My cookies, with lined space for writing wins and cookies piled around it. Handwritten note: one cookie per win, no win too small."></figure><p class="ws-note">✎ Fill this in on the <a href="/Self-Pwning-Field-Guide-PRINT-booklet.pdf">printable guide</a></p></section>
+<div class="guidecta">
+  <h3>Print it for your team</h3>
+  <p>This page is pages 14 to 18 of the free Self Pwning field guide. The PDF has the worksheets ready to fill in, and prints as an A4 booklet.</p>
+  <div class="cta" style="margin-top:14px"><a class="btn primary" href="/Self-Pwning-Field-Guide.pdf" target="_blank" rel="noopener">Read the guide</a><a class="btn ghost" href="/Self-Pwning-Field-Guide-PRINT-booklet.pdf" download>Print booklet</a></div>
+</div>
+<div class="gethelp" role="note">
+  <h3>Need to talk now?</h3>
+  <p>If you're in immediate danger, call your local emergency number: 999 (UK) · 911 (US/Canada) · 112 (EU) · 000 (Australia). For free, confidential support, see the <a href="/#help">helplines on the home page</a>.</p>
+</div>
+<p style="font-size:15px;color:var(--grey);margin-top:22px">Not medical advice. This guide is written by a security person, not a mental health professional. If you're struggling, talk to a GP, doctor or therapist.</p>
+<h2 style="margin-top:56px">More from the guide</h2>
+<div class="more"><a href="/stress-and-anxiety/"><b>Stress &amp; anxiety</b><span>The stress curve, signs, why cyber is exposed, everyday controls</span></a><a href="/burnout/"><b>Burnout</b><span>Signs, causes and four workstreams for recovery</span></a></div>
+<div style="height:72px"></div>
+</div></div>
+</main>
+<footer>
+  <div class="wrap">
+    <div>
+      <div class="tagline">Don't self pwn.<br><span>Patch. Rest. Repeat.</span></div>
+      <strong>Sam Macdonald</strong> · <a href="https://www.linkedin.com/in/sam-macdonald-66967642/" rel="noopener">LinkedIn</a> · <a href="/contact/">Contact</a>
+    </div>
+    <div class="fr">
+      Self Pwning · Field Guide Vol. 01<br>
+      Licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" rel="license noopener">CC BY-NC-ND 4.0</a><br>
+      Not a substitute for professional help
+    </div>
+  </div>
+</footer>
+</body>
+</html>

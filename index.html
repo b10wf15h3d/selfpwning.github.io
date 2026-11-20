@@ -92,7 +92,14 @@ h2{font-family:var(--sans);font-weight:900;text-transform:uppercase;font-size:cl
 /* inside */
 section.block{padding:84px 0}
 .parts{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-.part{background:var(--card);border:1.5px solid var(--ink);border-radius:12px;padding:22px 22px 20px}
+.part{position:relative;display:flex;flex-direction:column;background:var(--card);border:1.5px solid var(--ink);border-radius:12px;padding:22px 22px 20px;transition:transform .12s ease,box-shadow .12s ease}
+.part:hover{transform:translateY(-2px);box-shadow:0 6px 0 var(--ink)}
+.part h3 a{text-decoration:none}
+.part h3 a::after{content:"";position:absolute;inset:0;border-radius:12px}
+.part .go{margin-top:auto;padding-top:14px;font-family:var(--mono);font-size:13px;font-weight:700;color:var(--teal)}
+.part:hover .go{color:var(--coral)}
+.readon{font-family:var(--mono);font-size:12.5px;color:var(--sage)}
+.readon a{color:var(--amber)}
 .part .n{font-family:var(--mono);font-size:12px;letter-spacing:.14em;color:var(--teal);font-weight:700;text-transform:uppercase}
 .part h3{font-family:var(--sans);font-weight:900;text-transform:uppercase;font-size:22px;margin:6px 0 8px}
 .part p{font-size:16.5px;line-height:1.5}
@@ -194,22 +201,25 @@ footer .fr{text-align:right;align-self:flex-end}
   <div class="wrap">
     <div class="tag">// what's inside</div>
     <h2>Four threats. Plenty of patches.</h2>
-    <p class="sub">Practical, plain-English mental health advice, written for people who work in security.</p>
+    <p class="sub">Practical, plain-English mental health advice, written for people who work in security. Read each part online below, or get the whole guide as a PDF.</p>
     <div class="parts">
       <article class="part">
         <div class="n">Part 1</div>
-        <h3>Stress &amp; anxiety</h3>
+        <h3><a href="/stress-and-anxiety/">Stress &amp; anxiety</a></h3>
         <p>The performance curve, the signs to watch for, why our industry is exposed, and everyday controls: organising your time, finding your triggers and getting the basics right.</p>
+        <span class="go" aria-hidden="true">Read Part 1 online →</span>
       </article>
       <article class="part">
         <div class="n">Part 2</div>
-        <h3>Burnout</h3>
+        <h3><a href="/burnout/">Burnout</a></h3>
         <p>How burnout differs from stress, what causes it at work, four workstreams for recovery, and a "go-bag" of small things that make you feel more human.</p>
+        <span class="go" aria-hidden="true">Read Part 2 online →</span>
       </article>
       <article class="part">
         <div class="n">Part 3</div>
-        <h3>Imposter syndrome</h3>
+        <h3><a href="/imposter-syndrome/">Imposter syndrome</a></h3>
         <p>The thoughts that sound like truth but aren't, why it thrives in cyber, and two worksheets for fighting back: the BS List and the Cookie Jar.</p>
+        <span class="go" aria-hidden="true">Read Part 3 online →</span>
       </article>
     </div>
     <div class="also">
@@ -297,6 +307,7 @@ footer .fr{text-align:right;align-self:flex-end}
   <div class="wrap">
     <div>
       <div class="tagline">Don't self pwn.<br><span>Patch. Rest. Repeat.</span></div>
+      <p class="readon" style="margin-bottom:10px">Read online: <a href="/stress-and-anxiety/">Stress &amp; anxiety</a> · <a href="/burnout/">Burnout</a> · <a href="/imposter-syndrome/">Imposter syndrome</a></p>
       <strong>Sam Macdonald</strong> · <a class="js-mail" href="/contact/">Email</a> · <a href="https://www.linkedin.com/in/sam-macdonald-66967642/" rel="noopener">LinkedIn</a> · <a href="/contact/">Contact</a>
     </div>
     <div class="fr">
